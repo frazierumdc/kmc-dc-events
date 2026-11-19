@@ -8,7 +8,7 @@
     "typecheck": "tsc -p ."
   },
   "devDependencies": {
-    "sharp": "0.34.4",
+    "sharp": "0.35.5",
     "@playwright/test": "^1.63.0"
   }
 }

@@ -26,3 +26,20 @@ overrides:
   # through rimraf 5, which google-gax and gaxios (under firebase-admin) list but never load
   # at run time. rimraf 6 takes the fixed glob. A major version of a package no code here runs.
   "rimraf@5": "^6.1.4"
+  # Dependabot alerts (19 Nov 2026). Every copy these replace came through build and developer
+  # tools only (firebase-tools, eslint, workbox-build, the Hono dev server), not the app or the job.
+  # Left open: @opentelemetry/core 1.x under firebase-tools (moderate; the fix is a major version).
+  # Same-major fixes:
+  "undici@>=6 <6.29.1": "^6.29.1"
+  "undici@>=8 <8.12.2": "^8.12.2"
+  "fast-uri@>=3 <3.1.9": "^3.1.9"
+  "hono@<4.13.16": "^4.13.16"
+  "@hono/node-server@>=2 <2.1.6": "^2.1.6"
+  "serialize-javascript@<7.1.3": "^7.1.3"
+  # Major-version fixes where the parent has no release with the fixed version yet; the tests,
+  # lint and both builds pass with them:
+  "glob@>=9 <14.0.2": "^14.0.2"
+  "minimatch@>=7 <11.0.1": "^11.0.1"
+  "uuid@<11.1.1": "^11.1.1"
+  "basic-ftp@<6.2.4": "^6.2.4"
+  "ip-address@>=10 <10.7.4": "^10.7.4"
