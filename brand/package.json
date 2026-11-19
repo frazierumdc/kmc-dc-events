@@ -1,0 +1,14 @@
+{
+  "name": "@kmcdc/brand",
+  "private": true,
+  "type": "module",
+  "description": "A placeholder logo and every image the app uses, generated from one picture.",
+  "scripts": {
+    "generate": "node generate.ts && node startup-images.ts",
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "sharp": "0.34.4",
+    "@playwright/test": "^1.63.0"
+  }
+}

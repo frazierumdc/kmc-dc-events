@@ -1,0 +1,572 @@
+/* ---------- details panel ---------- */
+
+/*
+ * A sheet from the bottom over a dim (EV-36): the <dialog> fills the screen and is clear,
+ * so a tap above the panel lands on it and closes. The screen behind doesn't scroll.
+ */
+html[data-sheet] {
+  overflow: hidden;
+}
+
+/* The bar is dimmed behind the panel: no blur to redraw while it slides. */
+html[data-sheet] .ui-topbar {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.ui-sheet {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  /*
+   * clip, not hidden: a hidden box can still be scrolled, and opening the dialog scrolls it
+   * to show the focused title while the panel is still below the screen. iPhone then
+   * slides the panel past its place and snaps it back; Android shows it without the slide.
+   */
+  overflow: hidden;
+  overflow: clip;
+}
+
+.ui-sheet[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ui-sheet::backdrop {
+  background: var(--scrim);
+  animation: ui-fade 0.3s ease-out;
+}
+
+.ui-sheet[data-closing]::backdrop {
+  opacity: 0;
+  animation: ui-fade 0.25s ease-in reverse;
+}
+
+.ui-sheet-panel {
+  width: 100%;
+  max-width: 640px;
+  max-height: calc(100dvh - env(safe-area-inset-top) - 12px);
+  margin: 0 auto;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 24px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-radius: 12px 12px 0 0;
+  background: var(--surface);
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.12);
+  animation: ui-sheet-in 0.36s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.ui-sheet[data-closing] .ui-sheet-panel {
+  transform: translateY(100%);
+  animation: ui-sheet-out 0.24s ease-in;
+}
+
+@keyframes ui-sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+/* From where a drag down let go of it (--sheet-from, set by the drag), else from its place. */
+@keyframes ui-sheet-out {
+  from {
+    transform: translateY(var(--sheet-from, 0));
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes ui-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+/* The top stays while the rest scrolls: grabber, categories and ✕. */
+.ui-sheet-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px max(8px, env(safe-area-inset-right)) 0 max(20px, env(safe-area-inset-left));
+  background: var(--surface);
+}
+
+.ui-grabber {
+  flex: 0 0 100%;
+  margin-bottom: 4px;
+}
+
+.ui-grabber::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 5px;
+  margin: 0 auto;
+  border-radius: 2.5px;
+  background: var(--grabber);
+}
+
+/* The categories in a pill tinted with the kind's colour (D45); grey for no kind. */
+.ui-tag {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: calc(100% - 52px);
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--track);
+  color: var(--muted);
+  font-size: min(0.706rem, 16px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ui-tag[data-kind="class"] {
+  background: var(--class-soft);
+  color: var(--class-text);
+}
+
+.ui-tag[data-kind="special"] {
+  background: var(--special-soft);
+  color: var(--special-text);
+}
+
+.ui-tag[data-kind="prayer"] {
+  background: var(--prayer-soft);
+  color: var(--prayer-text);
+}
+
+.ui-tag[data-tone="program"] {
+  background: var(--program-soft);
+  color: var(--program-text);
+}
+
+.ui-tag[data-tone="branch"] {
+  background: var(--branch-soft);
+  color: var(--branch-text);
+}
+
+.ui-tag[data-tone="elsewhere"] {
+  background: var(--elsewhere-soft);
+  color: var(--elsewhere-text);
+}
+
+/* ✕: a small grey disc, as iPhone sheets have, inside a 44 pt target. */
+.ui-sheet-close {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--track) 15px, transparent 15.5px);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.ui-sheet-close svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 2.2;
+}
+
+.ui-sheet-body {
+  padding: 0 max(20px, env(safe-area-inset-right)) 0 max(20px, env(safe-area-inset-left));
+}
+
+/* The title takes focus when the panel opens (EV-38); it isn't a control, so no ring. */
+.ui-sheet-body h2:focus {
+  outline: none;
+}
+
+.ui-sheet-body h2 {
+  margin: 2px 0 16px;
+  font-size: 1.412rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+/* What changed while the panel was open (NT-5): quiet, neutral, never a button. */
+.ui-updated {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: -10px 0 16px;
+  color: var(--muted);
+  font-size: 0.882rem;
+  line-height: 1.3;
+}
+
+.ui-updated svg {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.9;
+}
+
+.ui-gone {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 20px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--pressed);
+}
+
+[data-platform="android"] .ui-gone {
+  border-radius: 12px;
+}
+
+.ui-gone svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  color: var(--muted);
+}
+
+.ui-gone p {
+  margin: 0;
+}
+
+.ui-gone b {
+  display: block;
+  font-weight: 600;
+}
+
+.ui-gone span {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.882rem;
+  line-height: 1.35;
+}
+
+.ui-gone-close {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Couldn't check (NT-6): a neutral card above the list, the whole of it one link. */
+.ui-check-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 44px;
+  margin: 12px 0 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.882rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+[data-platform="android"] .ui-check-notice {
+  min-height: 48px;
+  border-radius: 12px;
+}
+
+.ui-check-notice svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  color: var(--muted);
+}
+
+/* The address stays whole when it fits a line, and breaks only when larger text makes it
+   wider than the card. */
+.ui-check-notice u {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  text-underline-offset: 2px;
+}
+
+.ui-facts {
+  margin: 0;
+}
+
+.ui-facts div + div {
+  margin-top: 14px;
+}
+
+.ui-facts dd {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  align-items: start;
+  gap: 12px;
+  margin: 0;
+}
+
+.ui-facts svg {
+  width: 22px;
+  height: 22px;
+  margin-top: 0.1em;
+  color: var(--muted);
+}
+
+.ui-facts b {
+  display: block;
+  font-weight: 600;
+}
+
+.ui-facts dd span span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.941rem;
+}
+
+.ui-desc {
+  margin: 18px 0 0;
+  font-size: 0.941rem;
+  line-height: 1.45;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+/* Addresses in the description (EV-33): underlined, in maroon (D45). */
+.ui-desc a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* Buttons (EV-35), as the mock-ups: the main one filled maroon, Add to calendar and Share
+   grey, Directions outlined (D45). */
+.ui-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ui-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--track);
+  color: var(--text);
+  font: inherit;
+  font-size: min(1rem, 22px);
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ui-btn-main {
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+}
+
+.ui-btn-outline {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--line);
+  color: var(--accent);
+}
+
+/* The online button (D46): a screen before its words, a short line under it. */
+.ui-online {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ui-online .ui-btn svg {
+  flex: none;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 8px;
+}
+
+.ui-caption {
+  margin: 0;
+  color: var(--muted);
+  font-size: min(0.8125rem, 18px);
+  text-align: center;
+}
+
+.ui-btn:active {
+  opacity: 0.6;
+}
+
+.ui-btn:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+/*
+ * Add to calendar and Share side by side; ♡ Favorite joins them later. They stack when
+ * larger text no longer fits two in a row.
+ */
+.ui-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr));
+  gap: 10px;
+}
+
+/*
+ * An action sheet over the details panel (Add to calendar on iPhone, EV-35), as iPhone
+ * draws one: the choices in a rounded group with a small title, Cancel apart below it.
+ */
+.ui-choices {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0 8px calc(env(safe-area-inset-bottom) + 8px);
+  border: 0;
+  background: transparent;
+  color: var(--text);
+}
+
+.ui-choices[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ui-choices::backdrop {
+  background: var(--scrim);
+  animation: ui-fade 0.25s ease-out;
+}
+
+.ui-choices-panel {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  animation: ui-sheet-in 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Raised above the panel: a lighter grey in dark mode, as iPhone draws it. */
+.ui-choices-group {
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--elevated);
+}
+
+.ui-choices-title {
+  margin: 0;
+  padding: 14px 16px;
+  color: var(--muted);
+  font-size: min(0.765rem, 17px);
+  text-align: center;
+}
+
+.ui-choices-title:focus {
+  outline: none;
+}
+
+.ui-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 57px;
+  padding: 10px 16px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: var(--elevated);
+  color: var(--accent);
+  font: inherit;
+  font-size: min(1.176rem, 26px);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ui-choice:active {
+  background: var(--pressed);
+}
+
+.ui-choice:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: -4px;
+}
+
+.ui-choice-cancel {
+  margin-top: 8px;
+  border-top: 0;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* Android: a Material bottom sheet: wide corners, a short handle, a plain ✕ button. */
+[data-platform="android"] .ui-sheet-panel {
+  border-radius: 28px 28px 0 0;
+}
+
+[data-platform="android"] .ui-grabber {
+  margin: 10px 0 6px;
+}
+
+[data-platform="android"] .ui-grabber::before {
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+[data-platform="android"] .ui-sheet-head {
+  padding-right: max(4px, env(safe-area-inset-right));
+}
+
+[data-platform="android"] .ui-sheet-close {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  color: var(--text);
+}
+
+[data-platform="android"] .ui-sheet-close svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.7;
+}
+
+[data-platform="android"] .ui-sheet-body h2 {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Material buttons: full pills. */
+[data-platform="android"] .ui-btn {
+  min-height: 48px;
+  border-radius: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}

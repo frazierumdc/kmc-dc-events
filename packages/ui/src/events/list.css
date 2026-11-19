@@ -1,0 +1,372 @@
+/* ---------- list ---------- */
+
+/* Sideways swipes on the list change the filter (EV-12); the page still scrolls and zooms. */
+.ui-swipe {
+  touch-action: pan-y pinch-zoom;
+}
+
+/* Room for the home indicator and any message, so nothing is hidden behind them (EV-17);
+   and room for the last day to reach the top of the list (EV-14). */
+.ui-main {
+  padding-bottom: calc(var(--bottom-h, 0px) + 16px + var(--end-space, 0px));
+  /* The list sliding past the side as the filter changes (EV-12) never widens the page:
+     iPhone would zoom the whole screen out to fit it, and back. */
+  overflow-x: clip;
+}
+
+/* Days off screen aren't styled or laid out until they come near (the list is long). */
+.ui-day {
+  margin: 18px 0 0;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
+}
+
+/* The day the list is moved to, and the few after it, are drawn at once (EV-14). */
+.ui-day[data-near] {
+  content-visibility: visible;
+}
+
+/* The heading takes focus when a date is tapped (EV-14); it isn't a control, so no ring. */
+.ui-day h2:focus {
+  outline: none;
+}
+
+.ui-day h2 {
+  position: relative;
+  isolation: isolate;
+  margin: 0 0 6px;
+  padding: 0 4px;
+  color: var(--muted);
+  font-size: 0.765rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Each event is its own rounded block (EV-22, D45). */
+.ui-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[data-platform="android"] .ui-group {
+  gap: 8px;
+}
+
+/*
+ * A row (EV-11, option J): the picture with the start time on it, the kind's bar, then the
+ * title on up to two lines, the where line and the second line. Every row keeps those lines,
+ * so all rows are the same height; a lifted card, as in the mock-up.
+ */
+.ui-row {
+  position: relative;
+  display: grid;
+  color: inherit;
+  text-decoration: none;
+  grid-template-columns: 84px 4px 1fr;
+  align-items: center;
+  gap: 0 11px;
+  padding: 12px 12px 12px 10px;
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 8%),
+    0 4px 12px rgb(0 0 0 / 6%);
+  cursor: pointer;
+}
+
+/* The block is tinted with its kind's colour (D45). */
+.ui-row[data-kind="class"] {
+  background: var(--class-block);
+}
+
+.ui-row[data-kind="special"] {
+  background: var(--special-block);
+}
+
+.ui-row[data-kind="prayer"] {
+  background: var(--prayer-block);
+}
+
+/* A study program's session (AN-15) or a branch class takes its own colour in place of Classes' (D45). */
+.ui-row[data-tone="program"] {
+  background: var(--program-block);
+}
+
+.ui-row[data-tone="branch"] {
+  background: var(--branch-block);
+}
+
+/* Another center's special event takes slate in place of Special's colour (D67). */
+.ui-row[data-tone="elsewhere"] {
+  background: var(--elsewhere-block);
+}
+
+.ui-row:focus-visible {
+  outline-offset: -2px;
+}
+
+[data-platform="android"] .ui-row {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* The picture, square, in the kind's colour until it loads; with none, the center's logo on
+   that colour (D7, D45). */
+.ui-pic {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 14px;
+  background: var(--class-bar);
+}
+
+[data-kind="special"] .ui-pic {
+  background: var(--special-bar);
+}
+
+[data-kind="prayer"] .ui-pic {
+  background: var(--prayer-bar);
+}
+
+[data-tone="program"] .ui-pic {
+  background: var(--program-bar);
+}
+
+[data-tone="branch"] .ui-pic {
+  background: var(--branch-bar);
+}
+
+[data-tone="elsewhere"] .ui-pic {
+  background: var(--elsewhere-bar);
+}
+
+.ui-pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+/* The center's round logo, whole, with the kind's colour around it. */
+.ui-pic img.ui-pic-default {
+  box-sizing: border-box;
+  padding: 9%;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+/* The start time on the picture, white on a dark label: 4.5:1 or more over any picture. */
+.ui-time {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: calc(100% - 10px);
+  padding: 0.2em 0.45em;
+  border-radius: 7px;
+  background: rgb(0 0 0 / 72%);
+  color: #fff;
+  line-height: 1.1;
+}
+
+.ui-time b {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.ui-time i {
+  font-size: 0.62rem;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.ui-time.ui-allday b {
+  font-size: 0.7rem;
+}
+
+/* A bar of the kind's colour down the block (D45); no kind keeps the space, without colour. */
+.ui-kindbar {
+  align-self: stretch;
+  width: 4px;
+  border-radius: 2px;
+}
+
+[data-kind="class"] .ui-kindbar {
+  background: var(--class-bar);
+}
+
+[data-kind="special"] .ui-kindbar {
+  background: var(--special-bar);
+}
+
+[data-kind="prayer"] .ui-kindbar {
+  background: var(--prayer-bar);
+}
+
+[data-tone="program"] .ui-kindbar {
+  background: var(--program-bar);
+}
+
+[data-tone="branch"] .ui-kindbar {
+  background: var(--branch-bar);
+}
+
+[data-tone="elsewhere"] .ui-kindbar {
+  background: var(--elsewhere-bar);
+}
+
+.ui-rowmain {
+  min-width: 0;
+}
+
+/* Up to two lines, always the room of two; a longer title ends in "…" (its panel has it all). */
+.ui-title {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 2.5em;
+  font-size: 0.941rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* The second line, under the where line: one line, there even when empty. */
+.ui-sub {
+  display: block;
+  overflow: hidden;
+  height: 1.3em;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.765rem;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+ * The "where" line (EV-11): a filled pin and the place in the title's colour, semi-bold, so
+ * where it is stands out; a screen and Online in the grey of the second line. Words and
+ * icons only, no chips: they say where, they aren't buttons, and colour stays for the
+ * kind (D45). The icons grow with the text.
+ */
+.ui-where {
+  display: flex;
+  overflow: hidden;
+  gap: 0 12px;
+  height: 1.3em;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.765rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.ui-where > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.ui-where svg {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.ui-where .ui-place {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.ui-empty {
+  padding: 22px 16px;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.882rem;
+  text-align: center;
+}
+
+.ui-delayed {
+  animation: ui-appear 0s linear 1s both;
+}
+
+@keyframes ui-appear {
+  from {
+    visibility: hidden;
+  }
+}
+
+[data-platform="android"] .ui-empty {
+  border-radius: 16px;
+}
+
+/*
+ * Very large text (about 1.4x and up): rows grow to fit and nothing is cut, as Apple asks at
+ * accessibility sizes. The picture and the time share the first line and the title and its
+ * lines have the whole width below. The query is in em, so it follows the text size rather
+ * than the screen.
+ */
+.ui-group {
+  container-type: inline-size;
+}
+
+@container (max-width: 15em) {
+  .ui-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* The time beside the picture, in the title's colour. */
+  .ui-time {
+    top: 50%;
+    bottom: auto;
+    left: calc(100% + 12px);
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.25em;
+    max-width: none;
+    padding: 0;
+    background: none;
+    color: var(--text);
+    transform: translateY(-50%);
+  }
+
+  .ui-time b {
+    font-size: 0.941rem;
+  }
+
+  .ui-time i {
+    color: var(--muted);
+    font-size: 0.647rem;
+  }
+
+  .ui-kindbar {
+    display: none;
+  }
+
+  .ui-title {
+    display: block;
+    min-height: 0;
+  }
+
+  .ui-where,
+  .ui-sub {
+    flex-wrap: wrap;
+    height: auto;
+    white-space: normal;
+  }
+}

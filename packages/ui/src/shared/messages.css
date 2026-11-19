@@ -1,0 +1,139 @@
+/* ---------- "Schedule updated" (EV-19) ---------- */
+
+/* A neutral card with a round check badge and two words; it goes by itself after 3 s. */
+.ui-toastslot {
+  padding: 0 16px;
+}
+
+.ui-toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 608px;
+  margin: 0 0 8px;
+  padding: 4px 4px 4px 12px;
+  border-radius: 14px;
+  background: var(--notice-bg);
+  color: var(--notice-text);
+  font-size: 0.941rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  animation: ui-rise 0.2s ease-out;
+}
+
+@media (min-width: 640px) {
+  .ui-toast {
+    margin-inline: auto;
+  }
+}
+
+.ui-toast-badge {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+}
+
+.ui-toast-text {
+  flex: 1;
+  padding-block: 8px;
+}
+
+/* ✕: a 44 px target (48 px on Android) with a small round fill, as on the details panel. */
+.ui-toast-close {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.16) 14px, transparent 14.5px);
+  color: inherit;
+  cursor: pointer;
+}
+
+.ui-toast-close svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2.4;
+}
+
+.ui-toast-badge svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.6;
+}
+
+/* Android: a Material snackbar's shape and type. */
+[data-platform="android"] .ui-toast {
+  min-height: 48px;
+  padding: 0 0 0 12px;
+  border-radius: 4px;
+  font-size: 0.882rem;
+  font-weight: 500;
+}
+
+[data-platform="android"] .ui-toast-close {
+  width: 48px;
+  height: 48px;
+  background: none;
+}
+
+@keyframes ui-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* A message going away (Leaving.tsx): on iPhone it drops a little and fades; Android's
+   snackbar and message fade. */
+.ui-leaving {
+  display: contents;
+}
+
+.ui-leaving > * {
+  animation: ui-drop 0.2s ease-in forwards;
+}
+
+[data-platform="android"] .ui-leaving > * {
+  animation: ui-fade-out 0.15s linear forwards;
+}
+
+@keyframes ui-drop {
+  to {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes ui-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+/* ---------- bottom ---------- */
+
+/* Messages float above the home indicator; the empty area takes no taps. */
+.ui-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 8px);
+  pointer-events: none;
+}
+
+.ui-bottom > * {
+  pointer-events: auto;
+}

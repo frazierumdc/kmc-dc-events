@@ -1,0 +1,20 @@
+{
+  "name": "@kmcdc/functions",
+  "private": true,
+  "type": "module",
+  "main": "deploy/index.js",
+  "engines": {
+    "node": "24"
+  },
+  "scripts": {
+    "build": "rm -f deploy/index.js deploy/package.json && esbuild src/index.ts --bundle --platform=node --format=esm --target=node24 --outfile=deploy/index.js --external:firebase-functions --external:firebase-admin --log-level=warning && node scripts/write-deploy-manifest.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@kmcdc/cloud": "workspace:*",
+    "@kmcdc/domain": "workspace:*",
+    "@kmcdc/sync": "workspace:*",
+    "firebase-admin": "^14.5.1",
+    "firebase-functions": "^7.4.0"
+  }
+}

@@ -1,0 +1,16 @@
+# Docs and notes are wrapped by hand.
+*.md
+docs/
+brand/images/
+pnpm-lock.yaml
+
+# Kept byte-identical to the copy pasted into Wix.
+wix/
+
+# Local Claude Code settings, not in git.
+.claude/settings.local.json
+.builds/
+apps/functions/deploy/
+
+# Email template snapshots, written by the tests as the emails are.
+**/__snapshots__/

@@ -1,0 +1,17 @@
+The app is behind the website
+
+What happened: Since about Wednesday, November 11, 2026, at 8:45 PM the app's schedule has differed from the website: an event was added, cancelled or moved in Wix, and the change hasn't been published to the app.
+
+What it means for app users: The app still shows the last schedule published. People may see a cancelled event, or an old date or time.
+
+What to do:
+  1. Look at the Update schedule job's runs in Google Cloud Run: the newest run's log says what failed.
+  2. Open the Update schedule job in Google Cloud Run and select Execute. You'll get a "works again" email when the app matches the website.
+  3. If that run succeeds and this email comes again, follow the runbook.
+
+The runbook The app is behind the website: https://github.com/center/events-app/blob/main/docs/runbooks.md#the-app-is-behind-the-website
+The Update schedule job: https://console.cloud.google.com/run/jobs/details/us-east4/update-schedule/executions?project=your-project-id-dev
+
+--
+You'll get at most one email a day about this problem.
+You get this because you're on the KMC DC app admins list.

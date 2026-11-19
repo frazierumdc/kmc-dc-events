@@ -1,0 +1,288 @@
+{
+  "_note": "Real events from the dev schedule published 16 Oct 2026 (20261016T130850Z-7bed6db1), descriptions emptied, and its last event; the tests change them to make each kind of change.",
+  "schema": 2,
+  "version": "20261016T130850Z-7bed6db1",
+  "publishedAt": "2026-10-16T13:08:50Z",
+  "timezone": "America/New_York",
+  "site": {
+    "center": {
+      "name": "Kadampa Meditation Center DC",
+      "shortName": "KMC DC"
+    },
+    "homeCity": "Washington",
+    "contact": {
+      "phoneDisplay": "202.555.0100",
+      "phoneE164": "+12025550100",
+      "email": "info@example.org"
+    },
+    "links": {
+      "onlineClasses": "https://www.example.org/online-classes"
+    },
+    "categoryKinds": {
+      "Weekly Meditation Classes": "class",
+      "Study Programs": "class",
+      "Richmond Branch Classes": "class",
+      "Retreats & Special Events": "special",
+      "Online Special Events": "special",
+      "Chanted Prayers": "prayer"
+    }
+  },
+  "events": [
+    {
+      "id": "57ef9d42-e560-40c3-8499-75e16a7fedfc",
+      "title": "Silent Saturday Retreat - A Heart of Gratitude",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/silent-saturday-retreat-a-heart-of-gratitude",
+      "registrationOpen": true,
+      "online": {
+        "type": "event",
+        "id": "9cdbd199-88a1-4b81-a6f3-eb83bb122901",
+        "page": "https://www.example.org/event-details/online-silent-saturday-a-heart-of-gratitude",
+        "registrationOpen": true
+      },
+      "classId": "c_2C9V8Y2HDJY4",
+      "start": "2026-10-17T10:00:00-04:00",
+      "end": "2026-10-17T13:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "221d651b-8f33-4e2a-8266-1d2605739d5d",
+      "title": "Richmond Meditation Class",
+      "summary": "",
+      "description": "",
+      "categories": ["Richmond Branch Classes"],
+      "page": "https://www.example.org/event-details/richmond-meditation-class-17",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_VVCAEVFKWNB3",
+      "start": "2026-10-19T19:00:00-04:00",
+      "end": "2026-10-19T20:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Diversity Thrift",
+        "address": "1407 Sherwood Ave, Richmond, VA 23220, USA",
+        "city": "Richmond",
+        "geo": {
+          "lat": 37.5696396,
+          "lng": -77.4549297
+        }
+      }
+    },
+    {
+      "id": "9cba8523-7312-4780-abe5-373d22499ac6",
+      "title": "Tuesday Rest and Reflect",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/tuesday-rest-and-reflect-2026-10-20-18-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_40R4BJB0FDTY",
+      "start": "2026-10-20T18:00:00-04:00",
+      "end": "2026-10-20T18:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "a11addb3-97a3-4c27-a051-90b52111daad",
+      "title": "Bliss and Benefit Fundraiser",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/bliss-and-benefit-fundraiser",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_THASQKGJXH42",
+      "start": "2026-10-24T17:00:00-04:00",
+      "end": "2026-10-24T20:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7f8689cf-702d-4a9c-b915-355b01077f3d",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-10-27-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-10-27T17:00:00-04:00",
+      "end": "2026-10-27T17:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9565442e-fa26-45d5-a6c4-ecf392b861e2",
+      "title": "Friday Night Lecture: Finding Strength Through Adversity & Community Dinner (optional)",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/friday-night-lecture-finding-strength-through-adversity-community-dinner-optional",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_X0Z360F09X2T",
+      "start": "2026-11-06T19:00:00-05:00",
+      "end": "2026-11-06T20:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "11daf079-2393-4885-9a77-03437e788b04",
+      "title": "Center Cherishing",
+      "summary": "",
+      "description": "",
+      "categories": [],
+      "page": "https://www.example.org/event-details/center-cherishing",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_ASMF39GZXPPS",
+      "start": "2026-11-08T14:00:00-05:00",
+      "end": "2026-11-08T17:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3edeadaa-9ad9-4e61-8c9e-b1319e21c229",
+      "title": "Special Sunday Morning Meditation: From Judgement to Compassion with Teacher E. Example",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/special-sunday-morning-meditation-from-judgement-to-compassion-with-teacher-e-example",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_MEKCJTFXR86J",
+      "start": "2026-11-29T10:00:00-05:00",
+      "end": "2026-11-29T11:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "586822e4-c957-4912-b6cf-2b2aa9e6e5f8",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-11-29-10-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-11-29T10:00:00-05:00",
+      "end": "2026-11-29T11:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "46cc5590-8f1c-4484-8fae-a2a61b1156d8",
+      "title": "Post Fall Festival Retreat With Teacher D. Example",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/post-fall-festival-retreat-with-teacher-d-example",
+      "registrationOpen": false,
+      "online": {
+        "type": "iconOnly"
+      },
+      "classId": "c_F8DTZDMEXX1D",
+      "start": "2027-10-15T19:00:00-04:00",
+      "end": "2027-10-17T19:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+/* The splash as a gallery of featured events (EV-44), option B: the picture whole over a
+   blurred copy of itself, ending in rounded corners with a soft shadow (the owner's choice B of
+   six edges), then the event, Register and See all events.
+   At very large text the picture is shorter and the words scroll. */
+.ui-stories {
+  position: fixed;
+  inset: 0;
+  /* Over the app and under the splash (1000), which fades away to show the first event. */
+  z-index: 990;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ui-poster-media {
+  position: relative;
+  /* The space the words and buttons leave, so all of it fits the screen whatever its height. */
+  flex: 1 1 0;
+  min-height: 36%;
+  overflow: hidden;
+  margin-bottom: 6px;
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 22%);
+  /* The page's own colour, so the blur's soft edge leaves no line. */
+  background: var(--bg);
+}
+
+.ui-poster-blur,
+.ui-poster-pic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* The same picture, enlarged and blurred, fills the space the whole one leaves. */
+.ui-poster-blur {
+  object-fit: cover;
+  filter: blur(24px) saturate(1.2);
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+.ui-poster-pic {
+  object-fit: contain;
+  padding-top: calc(env(safe-area-inset-top) + 56px);
+}
+
+/* The center's logo, for an event with no picture, under the bar with the small logo and Skip. */
+.ui-poster-art:has(> .ui-poster-default) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(env(safe-area-inset-top) + 56px);
+  background: var(--track);
+}
+
+.ui-poster-default {
+  width: min(52%, 220px);
+  height: auto;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* One event's pictures. The one showing fades in over the last, which stays whole under it
+   until the fade is done: the frame is never empty in between. */
+.ui-poster-art {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.ui-poster-art[data-on] {
+  z-index: 1;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ui-poster-art {
+    transition: opacity 0s 0.35s;
+  }
+
+  .ui-poster-art[data-on],
+  .ui-poster-text[data-on] {
+    transition: opacity 0.35s ease-out;
+  }
+}
+
+.ui-poster-top {
+  position: absolute;
+  z-index: 2;
+  inset: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(env(safe-area-inset-top) + 8px) 16px 0;
+}
+
+.ui-poster-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 25%);
+}
+
+.ui-poster-skip {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 50%);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+}
+
+.ui-poster-body {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 20px calc(env(safe-area-inset-bottom) + 20px);
+}
+
+/* Every event's words in the same space, as tall as the longest of them. */
+.ui-poster-texts {
+  display: grid;
+  align-self: stretch;
+}
+
+.ui-poster-text {
+  display: flex;
+  grid-area: 1 / 1;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ui-poster-text[data-on] {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* The template (option C): room for a tag, a title of 3 lines, a when of 2 and a where of 1,
+   whatever the event has, so every set of events looks the same; more only when one needs it. */
+.ui-poster-text::before {
+  /* A tag's height, for an event without one. */
+  content: "";
+  min-height: 1.5rem;
+}
+
+.ui-poster-text:has(> .ui-tag)::before {
+  content: none;
+}
+
+.ui-poster-title {
+  min-height: calc(3 * 1.22em);
+  margin: 10px 0 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.ui-poster-when {
+  min-height: calc(2 * 1.4em);
+}
+
+.ui-poster-where {
+  min-height: 1.4em;
+}
+
+.ui-poster-when,
+.ui-poster-where {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.ui-poster-where {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* The dots, centred, and Pause at the end of their row. The row is as tall as Pause, so Pause
+   keeps its own room and never crowds the words above or Register below (Apple: 44 pt, and
+   space around a button). */
+.ui-poster-pager {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.ui-poster-dots {
+  display: flex;
+  gap: 7px;
+}
+
+.ui-poster-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.ui-poster-dots i[data-on] {
+  width: 22px;
+  background: var(--accent);
+}
+
+.ui-poster-pause {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--track);
+  color: var(--text);
+  transform: translateY(-50%);
+}
+
+.ui-poster-pause svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ui-poster-register {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  min-height: 50px;
+  margin-top: auto;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Room above Register however short the words: Register is second last. */
+.ui-poster-body > :nth-last-child(3) {
+  margin-bottom: 16px;
+}
+
+.ui-poster-all {
+  align-self: stretch;
+  min-height: 44px;
+  margin-top: 6px;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}

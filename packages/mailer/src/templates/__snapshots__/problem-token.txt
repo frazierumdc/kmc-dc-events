@@ -1,0 +1,18 @@
+Schedule copy failed
+
+What happened: The update at Saturday, October 17, 2026, at 4:07 AM couldn't read events from Wix: the Wix feed refused the app's token.
+
+What it means for app users: Nothing has changed. The app still shows the schedule published Friday, October 16, 2026, at 9:08 AM. New changes in Wix won't reach the app until this is fixed.
+
+What to do:
+  1. If someone changed KMC_APP_FEED_TOKEN in Wix Secrets Manager, add the same value as a new version of WIX_FEED_TOKEN in Secret Manager in each of the three Google projects.
+  2. Otherwise follow the runbook Rotate the feed token (10 minutes).
+  3. Open the Update schedule job in Google Cloud Run and select Execute. You'll get a "works again" email.
+
+The runbook Rotate the feed token: https://github.com/example-org/events-app/blob/main/docs/runbooks.md#rotate-the-feed-token
+The Update schedule job: https://console.cloud.google.com/run/jobs/details/us-east4/update-schedule/executions?project=your-project-id-dev
+
+--
+Technical detail: Unreadable: The feed refused the token (403). Check WIX_FEED_TOKEN in Secret Manager against Wix Secrets Manager.
+You'll get at most one email a day about this problem.
+You get this because you're on the KMC DC app admins list.

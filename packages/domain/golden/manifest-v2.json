@@ -1,0 +1,10 @@
+{
+  "schema": 2,
+  "version": "20261009T150000Z-fc1d29fa",
+  "publishedAt": "2026-10-09T15:00:00Z",
+  "snapshots": {
+    "2": "/v2/feed/snapshots/20261009T150000Z-fc1d29fa.json"
+  },
+  "minAppBuild": null,
+  "message": null
+}

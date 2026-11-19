@@ -1,0 +1,42 @@
+{
+  "name": "kmc-dc-events",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.10.1",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "24",
+      "onFail": "download"
+    }
+  },
+  "scripts": {
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage && node scripts/coverage-by-package.js",
+    "build": "pnpm --filter @kmcdc/web build",
+    "copy": "node packages/sync/src/copy-cli.ts",
+    "e2e": "pnpm --filter @kmcdc/e2e e2e",
+    "data:check": "pnpm --filter @kmcdc/sync data:check",
+    "feed:check": "node packages/sync/src/feed-cli.ts check",
+    "feed:capture": "node packages/sync/src/feed-cli.ts capture",
+    "mail": "node packages/mailer/src/cli.ts",
+    "mail:authorize": "node packages/mailer/src/authorize.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.1",
+    "@vitest/coverage-v8": "5.0.3",
+    "esbuild": "0.25.10",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "firebase-tools": "^15.32.1",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.1",
+    "vitest": "^5.0.3"
+  }
+}

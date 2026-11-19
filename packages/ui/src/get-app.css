@@ -1,0 +1,11 @@
+/*
+ * The styles of the page for people new to the app, /get-app (IN-10): the tokens and base,
+ * then only the sheets its components use (InstallSteps, ChooseSafariBar and the player), in
+ * the same order as styles.css. The page shows no list, panel, notifications or stories, so
+ * it does not load their styles.
+ */
+@import "./theme.css";
+@import "./app-shell/settings.css";
+@import "./install/install-steps.css";
+@import "./app-shell/settings-android.css";
+@import "./install/install-player.css";

@@ -1,0 +1,580 @@
+/* A browser's button: its icon and its own name in a small grey key (IN-5). */
+.ui-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  border-radius: 7px;
+  background: var(--track);
+  font-weight: 600;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.ui-key svg {
+  width: 1em;
+  height: 1em;
+  stroke-width: 2.2;
+}
+
+/* Open as Web App's switch, on, as iPhone draws it. */
+.ui-switch {
+  position: relative;
+  width: 30px;
+  height: 18px;
+  margin-left: 2px;
+  border-radius: 9px;
+  background: #34c759;
+}
+
+.ui-switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.ui-step-hint {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.824rem;
+}
+
+/* A small picture of where to tap, the button ringed in maroon. */
+.ui-picture {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  padding: 6px;
+  border-radius: 12px;
+  background: var(--bg);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.ui-picture svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2.2;
+}
+
+.ui-pic-round,
+.ui-pic-address,
+.ui-pic-menu {
+  background: var(--elevated);
+  box-shadow: 0 0 0 0.5px var(--line);
+}
+
+.ui-pic-round {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.ui-pic-address {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  height: 34px;
+  padding: 0 10px 0 3px;
+  border-radius: 17px;
+}
+
+.ui-pic-glyph {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.ui-pic-host {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui-pic-glyph[data-ring],
+.ui-pic-round[data-ring] {
+  box-shadow: 0 0 0 2.5px var(--accent);
+}
+
+.ui-pic-menu {
+  flex: 1;
+  padding: 3px 0;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.ui-pic-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  margin: 0 4px;
+  padding: 0 12px;
+  border-radius: 9px;
+  box-shadow: inset 0 0 0 2.5px var(--accent);
+}
+
+.ui-pic-item svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.9;
+}
+
+.ui-info-note {
+  margin: 7px 16px 18px;
+  color: var(--muted);
+  font-size: 0.765rem;
+}
+
+.ui-info-lead {
+  margin: 4px 16px 10px;
+}
+
+.ui-info-version {
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 0.765rem;
+  text-align: center;
+}
+
+.ui-info-row {
+  margin: 0;
+  padding: 12px 16px;
+  color: var(--muted);
+  font-size: 0.882rem;
+}
+
+.ui-info-row b {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ui-info-copy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-top: 0.5px solid var(--line);
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ui-info-copy svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* "Not what you see?": each Safari bar, picked by picture (IN-4). */
+.ui-info-option {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 16px 12px;
+  border: 0;
+  border-top: 0.5px solid var(--line);
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ui-info-option:first-child {
+  border-top: 0;
+}
+
+/*
+ * Settings' rows (EV-41): Add to Home Screen, Privacy and Share the app, each with its icon in a
+ * tinted square, as in iPhone's Settings. A row that opens a page ends in ›; Share, which
+ * does something, has none. The line between rows starts at the text.
+ */
+.ui-info-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  padding: 8px 12px 8px 14px;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ui-info-link > svg {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+}
+
+.ui-info-link + .ui-info-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 56px;
+  border-top: 0.5px solid var(--line);
+}
+
+.ui-info-ic {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.ui-info-ic svg {
+  width: 19px;
+  height: 19px;
+  stroke-width: 2.1;
+}
+
+.ui-info-ic[data-tint="accent"] {
+  background: #7a1f2b;
+}
+
+.ui-info-ic[data-tint="grey"] {
+  background: #636366;
+}
+
+.ui-info-ic[data-tint="teal"] {
+  background: #0a7f8a;
+}
+
+.ui-info-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.ui-info-text small {
+  color: var(--muted);
+  font-size: 0.765rem;
+  line-height: 1.3;
+}
+
+.ui-info-links + .ui-info-note {
+  margin-bottom: 24px;
+}
+
+.ui-privacy p {
+  margin: 0 16px 20px;
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.ui-privacy .ui-privacy-lead {
+  margin: 4px 16px 22px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.ui-privacy-lead b {
+  font-weight: 600;
+}
+
+.ui-privacy a {
+  color: var(--accent);
+}
+
+.ui-privacy .ui-info-version {
+  margin-top: 4px;
+}
+
+.ui-info-option .ui-picture {
+  margin-top: 0;
+}
+
+.ui-info-option-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.824rem;
+}
+
+.ui-info-option-label svg {
+  width: 1.1em;
+  height: 1.1em;
+  stroke-width: 2.2;
+}
+
+.ui-info-option-label[data-only] {
+  margin-top: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.ui-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--muted);
+  border-radius: 50%;
+}
+
+.ui-info-option[aria-checked="true"] .ui-radio {
+  border: 0;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.ui-radio svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2.8;
+}
+
+/* Pictures of Safari's menus and Share sheet (IN-5), as iOS 27 draws them. */
+.ui-shot {
+  display: block;
+  padding: 8px;
+}
+
+.ui-shot .ui-pic-menu {
+  display: block;
+  padding: 4px 0;
+  border-radius: 14px;
+}
+
+.ui-pic-row,
+.ui-shot .ui-pic-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.ui-shot .ui-pic-item {
+  margin: 0 4px;
+  padding: 0 8px;
+}
+
+.ui-pic-row[data-dim] {
+  opacity: 0.45;
+}
+
+.ui-pic-row svg,
+.ui-shot .ui-pic-item svg {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.ui-pic-page {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.ui-pic-page img {
+  flex: 0 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 0 0.5px var(--line);
+}
+
+.ui-pic-page b {
+  display: block;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.ui-pic-apps {
+  display: flex;
+  gap: 12px;
+  padding: 8px 12px;
+  border-top: 0.5px solid var(--line);
+  border-bottom: 0.5px solid var(--line);
+}
+
+.ui-pic-apps i {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: var(--track);
+}
+
+.ui-pic-apps i[data-app="airdrop"] {
+  background: #2f8cf6;
+}
+
+.ui-pic-apps i[data-app="messages"] {
+  background: #34c759;
+}
+
+.ui-pic-apps i[data-app="mail"] {
+  background: #1e7cf2;
+}
+
+.ui-pic-rounds {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 10px 2px;
+}
+
+.ui-pic-rounds > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.ui-pic-rounds i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #e3e3e8;
+  color: var(--text);
+}
+
+.ui-pic-rounds svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* View More: ringed in maroon, its name in bold. */
+.ui-pic-rounds [data-ring] {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.ui-pic-rounds [data-ring] i {
+  box-shadow: 0 0 0 3px var(--accent);
+}
+
+.ui-pic-list {
+  display: block;
+  margin: 0 8px 6px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--track);
+}
+
+.ui-pic-list .ui-pic-row + * {
+  border-top: 0.5px solid var(--line);
+}
+
+.ui-pic-list .ui-pic-item {
+  margin: 0;
+  border-radius: 12px;
+}
+
+.ui-pic-dialog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px 6px;
+  font-size: 13px;
+}
+
+.ui-pic-dialog-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--track);
+}
+
+.ui-pic-dialog-top i svg {
+  width: 13px;
+  height: 13px;
+  stroke-width: 2.4;
+}
+
+.ui-pic-add {
+  padding: 4px 14px;
+  border-radius: 14px;
+  background: #0a84ff;
+  box-shadow: 0 0 0 3px var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ui-pic-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 8px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: var(--track);
+  color: var(--text);
+  font-size: 13px;
+}
+
+.ui-pic-field small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.ui-pic-toggle {
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ui-pic-rounds i {
+    background: #545458;
+  }
+}

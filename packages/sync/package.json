@@ -1,0 +1,17 @@
+{
+  "name": "@kmcdc/sync",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./fixtures/*": "./fixtures/*"
+  },
+  "scripts": {
+    "data:check": "node src/data-check.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@kmcdc/domain": "workspace:*",
+    "zod": "^4.6.7"
+  }
+}

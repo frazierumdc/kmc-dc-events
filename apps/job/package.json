@@ -1,0 +1,19 @@
+{
+  "name": "@kmcdc/job",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@kmcdc/cloud": "workspace:*",
+    "@kmcdc/domain": "workspace:*",
+    "@kmcdc/mailer": "workspace:*",
+    "@kmcdc/publish": "workspace:*",
+    "@kmcdc/sync": "workspace:*",
+    "zod": "^4.6.7"
+  }
+}

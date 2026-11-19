@@ -1,0 +1,77 @@
+/* Android: the title at the start, Material section titles and cards. */
+[data-platform="android"] .ui-info-head {
+  grid-template-columns: auto 1fr auto;
+}
+
+[data-platform="android"] .ui-info-head h2 {
+  font-size: 1.294rem;
+  font-weight: 400;
+  text-align: start;
+}
+
+[data-platform="android"] .ui-info-app {
+  flex-direction: row;
+  gap: 16px;
+  margin: 6px 8px 20px;
+  text-align: start;
+}
+
+[data-platform="android"] .ui-info-app img {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+[data-platform="android"] .ui-info-app div,
+[data-platform="android"] .ui-info-app b {
+  font-size: 1.06rem;
+  font-weight: 500;
+}
+
+/* Android: Material list rows, the icon plain at the start. */
+[data-platform="android"] .ui-info-link {
+  gap: 20px;
+  min-height: 60px;
+  padding-left: 16px;
+}
+
+[data-platform="android"] .ui-info-ic {
+  width: 24px;
+  height: 24px;
+  background: none;
+  color: var(--muted);
+}
+
+[data-platform="android"] .ui-info-ic svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.8;
+}
+
+[data-platform="android"] .ui-info-link > svg {
+  display: none;
+}
+
+[data-platform="android"] .ui-info-link + .ui-info-link::before {
+  left: 60px;
+}
+
+[data-platform="android"] .ui-info-section {
+  margin-left: 8px;
+  color: var(--accent);
+  font-size: 0.824rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+[data-platform="android"] .ui-info-card {
+  border-radius: 16px;
+}
+
+[data-platform="android"] .ui-key {
+  border-radius: 8px;
+  font-weight: 500;
+}

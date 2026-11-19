@@ -1,0 +1,80 @@
+name: CI
+
+# Runs on every pull request, whatever branch it is into, so a pull request stacked on another
+# is checked like one into dev, test or main.
+# Skipped when a pull request changes only docs: Markdown anywhere, or anything in docs/.
+# Code already checked is not checked again: a release pull request (dev → test, test → main)
+# usually carries exactly the code CI passed on dev, so it finishes in seconds.
+on:
+  pull_request:
+    paths-ignore: ["**.md", "docs/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  # The code to check is the merge's tree. Each passing run leaves an artifact named after
+  # it (ci-passed-<tree>, kept 30 days), so the same tree is seen as already checked.
+  seen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      tree: ${{ steps.tree.outputs.tree }}
+      passed: ${{ steps.tree.outputs.passed }}
+    steps:
+      - uses: actions/checkout@v7
+      - id: tree
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tree="$(git rev-parse 'HEAD^{tree}')"
+          passed="$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=ci-passed-$tree&per_page=5" \
+            --jq '[.artifacts[] | select(.expired | not)] | length > 0')"
+          echo "tree=$tree" >> "$GITHUB_OUTPUT"
+          echo "passed=$passed" >> "$GITHUB_OUTPUT"
+          echo "Tree $tree; already passed: $passed"
+
+  # In Playwright's image, so the browsers and their system libraries are already there. The
+  # image's version must match @playwright/test in pnpm-lock.yaml; if they differ, the
+  # install step below downloads the right browsers (slower, but still correct).
+  ci:
+    needs: seen
+    if: needs.seen.outputs.passed != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+      options: --user 1001 --ipc=host
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm data:check
+      # The tests, with line coverage per package on the run's summary page. It reports and
+      # sets no threshold.
+      - run: pnpm test:coverage
+      - run: pnpm --filter @kmcdc/e2e exec playwright install chromium webkit
+      # Builds the app itself before it starts (playwright.config.ts).
+      - run: pnpm e2e
+      - run: echo "${{ needs.seen.outputs.tree }}" > ci-passed.txt
+      - uses: actions/upload-artifact@v7
+        with:
+          name: ci-passed-${{ needs.seen.outputs.tree }}
+          path: ci-passed.txt
+          retention-days: 30
+      - if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report
+          path: |
+            e2e/playwright-report/
+            e2e/test-results/
+          retention-days: 7

@@ -1,0 +1,4159 @@
+{
+  "_note": "Real events from the dev schedule published 16 Oct 2026 (20261016T130850Z-7bed6db1), as on 17 Oct 2026: every prayer, special event and study program session. Summaries and descriptions emptied.",
+  "schema": 2,
+  "version": "20261016T130850Z-7bed6db1",
+  "publishedAt": "2026-10-16T13:08:50Z",
+  "timezone": "America/New_York",
+  "site": {
+    "center": {
+      "name": "Kadampa Meditation Center DC",
+      "shortName": "KMC DC"
+    },
+    "homeCity": "Washington",
+    "contact": {
+      "phoneDisplay": "202.555.0100",
+      "phoneE164": "+12025550100",
+      "email": "info@example.org"
+    },
+    "links": {
+      "onlineClasses": "https://www.example.org/online-classes"
+    },
+    "categoryKinds": {
+      "Weekly Meditation Classes": "class",
+      "Study Programs": "class",
+      "Richmond Branch Classes": "class",
+      "Retreats & Special Events": "special",
+      "Online Special Events": "special",
+      "Chanted Prayers": "prayer"
+    },
+    "membership": {
+      "title": "You belong here",
+      "intro": "Become a member and make meditation part of your life.",
+      "benefits": [
+        "Free drop-in classes",
+        "Free Friday Night Lectures",
+        "Free or half-price courses and retreats"
+      ],
+      "note": "Benefits vary by plan.",
+      "link": "https://www.example.org/pricing-plans/list"
+    }
+  },
+  "events": [
+    {
+      "id": "57ef9d42-e560-40c3-8499-75e16a7fedfc",
+      "title": "Silent Saturday Retreat - A Heart of Gratitude",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/silent-saturday-retreat-a-heart-of-gratitude",
+      "registrationOpen": true,
+      "online": {
+        "type": "event",
+        "id": "9cdbd199-88a1-4b81-a6f3-eb83bb122901",
+        "page": "https://www.example.org/event-details/online-silent-saturday-a-heart-of-gratitude",
+        "registrationOpen": true
+      },
+      "classId": "c_2C9V8Y2HDJY4",
+      "start": "2026-10-17T10:00:00-04:00",
+      "end": "2026-10-17T13:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "75442f2d-3890-4515-a92a-d6043fbe0cb5",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-10-18-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-10-18T12:00:00-04:00",
+      "end": "2026-10-18T14:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "19964a1f-9de4-4a87-89c6-488e490a9315",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-10-18-15-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-10-18T15:00:00-04:00",
+      "end": "2026-10-18T16:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "00d8b6ab-9eeb-4b52-9da1-72ffd600353d",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-10-18-17-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-10-18T17:00:00-04:00",
+      "end": "2026-10-18T18:15:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "4322f713-df53-4977-8377-4a7b84f2dd04",
+      "title": "Heart Jewel",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-2026-10-20-08-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_CBPRZSJFZCPW",
+      "start": "2026-10-20T08:00:00-04:00",
+      "end": "2026-10-20T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "04f49deb-882e-4861-a543-52d62fc535da",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-20-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-20T09:00:00-04:00",
+      "end": "2026-10-20T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ac5dc813-1e33-4bf4-b194-33e541fc6f5e",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-10-20-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-10-20T17:00:00-04:00",
+      "end": "2026-10-20T17:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "d41dadca-0fe5-428f-8341-22f8059e84e5",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-10-20-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-10-20T18:45:00-04:00",
+      "end": "2026-10-20T20:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "241d05d3-caee-43b9-878e-b3edd412bc55",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-10-21-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-10-21T08:00:00-04:00",
+      "end": "2026-10-21T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "5793a939-5e26-4760-b591-896d00d9a806",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-21-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-21T09:00:00-04:00",
+      "end": "2026-10-21T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "0612eec6-0306-4849-9aaa-49a2e673a1e9",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-10-22-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-10-22T08:00:00-04:00",
+      "end": "2026-10-22T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f1dff222-16a3-4b73-836d-444e96cfe85a",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-22-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-22T09:00:00-04:00",
+      "end": "2026-10-22T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "81db7750-0f99-4db2-8523-a1f724b89e85",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-10-22-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-10-22T16:15:00-04:00",
+      "end": "2026-10-22T18:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ecb71579-babb-4ac3-954a-fa8829517f47",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-10-23-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-10-23T08:00:00-04:00",
+      "end": "2026-10-23T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "21ef4e6f-8220-45c3-94e8-27097dc9462d",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-23-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-23T09:00:00-04:00",
+      "end": "2026-10-23T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "a11addb3-97a3-4c27-a051-90b52111daad",
+      "title": "Bliss and Benefit Fundraiser",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/bliss-and-benefit-fundraiser",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_THASQKGJXH42",
+      "start": "2026-10-24T17:00:00-04:00",
+      "end": "2026-10-24T20:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9e61df52-1c26-4069-86ee-6964200968dc",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-10-25-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-10-25T12:00:00-04:00",
+      "end": "2026-10-25T14:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "d8235fe9-1fab-4595-85b6-0447709edbe5",
+      "title": "Offering to the Spiritual Guide (with Tsog)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/offering-to-the-spiritual-guide-with-tsog-2026-10-25-15-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_98VEDY09646T",
+      "start": "2026-10-25T15:00:00-04:00",
+      "end": "2026-10-25T16:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "1b52ec7f-2aa0-4e1c-a8d5-825901c14745",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-10-27-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-10-27T08:00:00-04:00",
+      "end": "2026-10-27T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "104e5e60-e8fd-4186-8e03-e80de153e90d",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-27-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-27T09:00:00-04:00",
+      "end": "2026-10-27T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7f8689cf-702d-4a9c-b915-355b01077f3d",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-10-27-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-10-27T17:00:00-04:00",
+      "end": "2026-10-27T17:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7e756ee3-e8e5-410e-a539-7b379ff7fe0c",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-10-27-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-10-27T18:45:00-04:00",
+      "end": "2026-10-27T20:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "33d28b44-3f75-492f-938b-0bd12aa39122",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-10-28-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-10-28T08:00:00-04:00",
+      "end": "2026-10-28T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "85dd1076-df4c-4ded-8fba-cccc561efb5e",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-28-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-28T09:00:00-04:00",
+      "end": "2026-10-28T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "039ec212-cb43-4b55-aaef-bd81d90074ed",
+      "title": "Melodious Drum - Kangso - Long Protector Puja)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/melodious-drum-kangso-long-protector-puja-2026-10-29-08-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_95PZJAB07T5Z",
+      "start": "2026-10-29T08:00:00-04:00",
+      "end": "2026-10-29T11:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "cb67e7ad-5bcd-4fad-b77e-dedae104809f",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-29-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-29T09:00:00-04:00",
+      "end": "2026-10-29T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "30762e55-15cb-464b-89dd-bf0798044837",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-10-30-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-10-30T08:00:00-04:00",
+      "end": "2026-10-30T09:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e986beb4-27d3-49d2-8a7a-348feafbbc7c",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-10-30-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-10-30T09:00:00-04:00",
+      "end": "2026-10-30T09:20:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "4182a425-5e16-4e30-b00d-89a60bc6911a",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-11-01-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-11-01T12:00:00-05:00",
+      "end": "2026-11-01T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "a65b25ec-2a73-458b-95ba-5cc5b8a26675",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-11-01-15-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-11-01T15:00:00-05:00",
+      "end": "2026-11-01T16:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "67ee0c8c-cfc3-4bef-a019-ecfd89cb762a",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-11-01-17-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-11-01T17:00:00-05:00",
+      "end": "2026-11-01T18:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e1ae3ce9-4aeb-4994-bf4f-b8a433c7dcd4",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-03-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-03T08:00:00-05:00",
+      "end": "2026-11-03T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e30cf1e7-4aa1-494d-a183-d9fa56fd1ba9",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-03-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-03T09:00:00-05:00",
+      "end": "2026-11-03T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "5a221767-869e-484a-8ee9-7ebc4777e54f",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-11-03-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-11-03T17:00:00-05:00",
+      "end": "2026-11-03T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "663589eb-0bdd-4fb2-b956-d7149c0d6f87",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-11-03-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-11-03T18:45:00-05:00",
+      "end": "2026-11-03T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "cac8079c-8029-4a56-9e14-9ad4b337bce5",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-04-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-04T08:00:00-05:00",
+      "end": "2026-11-04T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7b68c9cf-90f2-41b2-aec4-f04d9575d7af",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-04-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-04T09:00:00-05:00",
+      "end": "2026-11-04T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "15ca0842-af78-4cc5-bda3-78fcb909ecbc",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-05-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-05T08:00:00-05:00",
+      "end": "2026-11-05T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "5a283d08-ed27-47cf-82ec-84fcdfdb87f1",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-05-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-05T09:00:00-05:00",
+      "end": "2026-11-05T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "679b0b83-425a-4959-82ef-1c0ec1b9f0de",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-11-05-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-11-05T16:15:00-05:00",
+      "end": "2026-11-05T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "511ebc87-eb4a-41f4-84be-e7b80ac8a921",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-06-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-06T08:00:00-05:00",
+      "end": "2026-11-06T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "62b95e78-eea9-4438-9df0-e5e312253753",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-06-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-06T09:00:00-05:00",
+      "end": "2026-11-06T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9565442e-fa26-45d5-a6c4-ecf392b861e2",
+      "title": "Friday Night Lecture: Finding Strength Through Adversity & Community Dinner (optional)",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/friday-night-lecture-finding-strength-through-adversity-community-dinner-optional",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_X0Z360F09X2T",
+      "start": "2026-11-06T19:00:00-05:00",
+      "end": "2026-11-06T20:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "2d7214b4-b561-48d6-8cc6-750427b1b5b9",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-11-08-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-11-08T12:00:00-05:00",
+      "end": "2026-11-08T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "93998a71-52db-427c-bc06-7a06cb696a04",
+      "title": "Liberation from Sorrow: Prayers to Green Tara",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/liberation-from-sorrow-prayers-to-green-tara-2026-11-08-17-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_K4R7N1Z4EVW7",
+      "start": "2026-11-08T17:00:00-05:00",
+      "end": "2026-11-08T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "16e44971-6125-4e74-b1bb-86d29fc52218",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-11-08-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-11-08T18:45:00-05:00",
+      "end": "2026-11-08T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f1fa54fb-7417-4d7e-86f8-064caa8d0c1c",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-10-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-10T08:00:00-05:00",
+      "end": "2026-11-10T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "b81ed551-0dd6-4937-8a43-37f810d0d881",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-10-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-10T09:00:00-05:00",
+      "end": "2026-11-10T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "6bfef324-7654-4a19-844f-80b6464bc8ea",
+      "title": "Offering to the Spiritual Guide (with Tsog)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/offering-to-the-spiritual-guide-with-tsog-2026-11-10-15-45",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_98VEDY09646T",
+      "start": "2026-11-10T15:45:00-05:00",
+      "end": "2026-11-10T17:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "dbdb71a1-3eaa-47b8-8021-47eccb8fbf1f",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-11-10-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-11-10T18:45:00-05:00",
+      "end": "2026-11-10T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3df58e5a-193e-4795-b0db-991bd9f36a9e",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-11-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-11T08:00:00-05:00",
+      "end": "2026-11-11T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "5bc3acb9-1372-4bd1-a658-21b6b8276668",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-12-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-12T08:00:00-05:00",
+      "end": "2026-11-12T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3fa5ff80-2983-4bd2-b90e-620b808a369f",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-12-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-12T09:00:00-05:00",
+      "end": "2026-11-12T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "1309afb7-37d2-4a88-93d6-ab34cda58483",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-11-12-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-11-12T16:15:00-05:00",
+      "end": "2026-11-12T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "0da2a010-6da6-4837-a352-6d1be0db6bc7",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-13-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-13T08:00:00-05:00",
+      "end": "2026-11-13T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3dfd1aef-4d3a-4bb7-aa0b-62925be0cfec",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-13-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-13T09:00:00-05:00",
+      "end": "2026-11-13T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e56e760b-5334-45b7-b71f-d2bba1bbe111",
+      "title": "The Blessing Empowerment of Buddha Shakyamuni and Commentary on the Liberating Prayer",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/the-blessing-empowerment-of-buddha-shakyamuni-and-commentary-on-the-liberating-prayer",
+      "registrationOpen": true,
+      "online": {
+        "type": "event",
+        "id": "19604c77-0abb-4dfb-80ea-7e18e7822118",
+        "page": "https://www.example.org/event-details/online-commentary-to-the-blessing-empowerment-of-buddha-shakyamuni-and-commentary-on-the-liberating-prayer",
+        "registrationOpen": true
+      },
+      "classId": "c_W58NVH0Q7XAW",
+      "start": "2026-11-14T10:30:00-05:00",
+      "end": "2026-11-15T12:50:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "bc08b3df-49e7-41c1-99ab-47cbf8b86b65",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-11-15-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-11-15T12:00:00-05:00",
+      "end": "2026-11-15T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "dda06976-8e09-4568-b6d5-dd391f0039c4",
+      "title": "Powa: Prayers for the Deceased",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/powa-prayers-for-the-deceased-2026-11-15-16-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_75E6Z44VYR30",
+      "start": "2026-11-15T16:00:00-05:00",
+      "end": "2026-11-15T16:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "fd9522a2-5ef6-4913-b4a0-50c1a18adfed",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-11-15-17-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-11-15T17:00:00-05:00",
+      "end": "2026-11-15T18:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7847e715-85c6-4497-a769-43b5440911f2",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-17-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-17T08:00:00-05:00",
+      "end": "2026-11-17T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "35a61e1a-5043-4eda-821d-a13b07c514de",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-17-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-17T09:00:00-05:00",
+      "end": "2026-11-17T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "0c23df3c-4875-40e9-b666-724bb1aa8e2a",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-11-17-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-11-17T17:00:00-05:00",
+      "end": "2026-11-17T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "de56b669-abac-4361-8a1c-4c4d84a06306",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-11-17-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-11-17T18:45:00-05:00",
+      "end": "2026-11-17T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "05800b02-7f4f-4917-a4bf-4d4954380fc1",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-18-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-18T08:00:00-05:00",
+      "end": "2026-11-18T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e41ebf04-bef6-463f-93d8-62eb86e48f7a",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-18-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-18T09:00:00-05:00",
+      "end": "2026-11-18T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "c8b919b2-f3bd-4e5c-926e-f8ea1adad51e",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-19-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-19T08:00:00-05:00",
+      "end": "2026-11-19T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8a48769c-4277-4484-848e-355660d89992",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-19-09-00-2",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-19T09:00:00-05:00",
+      "end": "2026-11-19T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "92214c7d-ec52-448e-b458-2486c3b6514a",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-11-19-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-11-19T16:15:00-05:00",
+      "end": "2026-11-19T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "04891b98-4c44-4a7d-92db-78980a0b57ac",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-20-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-20T08:00:00-05:00",
+      "end": "2026-11-20T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "6554a8bd-580b-463e-b798-95bcf73f333f",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-11-20-09-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-11-20T09:00:00-05:00",
+      "end": "2026-11-20T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "23401712-b313-4237-a55f-8fb2226f583d",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-11-22-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-11-22T12:00:00-05:00",
+      "end": "2026-11-22T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "485c54c1-f686-46cf-9914-f341e4438e47",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-11-22-15-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-11-22T15:00:00-05:00",
+      "end": "2026-11-22T16:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "a131dbd2-b626-4636-8dd7-4430ddca29a2",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-11-22-17-00-1",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-11-22T17:00:00-05:00",
+      "end": "2026-11-22T18:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "54e8ed62-3938-4aab-9c01-a4da89f07660",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-24-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-24T08:00:00-05:00",
+      "end": "2026-11-24T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "90e24dfc-41ae-47ab-917d-d438f86cbb8a",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-11-24-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-11-24T17:00:00-05:00",
+      "end": "2026-11-24T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "842691cc-0c13-4518-bf34-9b793fef5c4d",
+      "title": "Offering to the Spiritual Guide (with Tsog)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/offering-to-the-spiritual-guide-with-tsog-2026-11-25-18-30",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_98VEDY09646T",
+      "start": "2026-11-25T18:30:00-05:00",
+      "end": "2026-11-25T20:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "d1489bdf-3864-4c17-8204-5ea02b33b5ae",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-26-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-26T08:00:00-05:00",
+      "end": "2026-11-26T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9bdb9bee-18f5-4e78-b1e2-4fc884830896",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-11-26-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-11-26T16:15:00-05:00",
+      "end": "2026-11-26T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "a208efae-53ac-49b4-ab4a-0daa70fd47d1",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-11-27-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-11-27T08:00:00-05:00",
+      "end": "2026-11-27T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8760f5f1-3b7c-4e57-9619-383675d3007f",
+      "title": "Melodious Drum - Kangso - Long Protector Puja)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/melodious-drum-kangso-long-protector-puja-2026-11-29-14-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_95PZJAB07T5Z",
+      "start": "2026-11-29T14:00:00-05:00",
+      "end": "2026-11-29T17:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f753780f-7729-4d24-a737-41a83b8f83b2",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-01-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-01T08:00:00-05:00",
+      "end": "2026-12-01T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3d3f556d-0055-43a9-a24d-6e2cf8b384f0",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-01-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-01T09:00:00-05:00",
+      "end": "2026-12-01T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "08806de0-71c7-4d6e-be8d-f3e8a2ba8c50",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-12-01-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-12-01T17:00:00-05:00",
+      "end": "2026-12-01T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "aae6a500-81e7-4d14-81ff-77296fdb2779",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-12-01-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-12-01T18:45:00-05:00",
+      "end": "2026-12-01T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "2fec89dc-02ba-47c4-b0ac-a789e7276643",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-02-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-02T08:00:00-05:00",
+      "end": "2026-12-02T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "5737560b-2fbc-4f02-a7bb-281fbeb3fcda",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-02-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-02T09:00:00-05:00",
+      "end": "2026-12-02T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "112122d9-564c-4136-81ce-43b4d957c3d1",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-03-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-03T08:00:00-05:00",
+      "end": "2026-12-03T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "31fa2dae-0a53-4f42-a4e0-b8e940abc236",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-03-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-03T09:00:00-05:00",
+      "end": "2026-12-03T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8314cccc-4f2f-47a1-a27a-dfb08d08b5c4",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-12-03-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-12-03T16:15:00-05:00",
+      "end": "2026-12-03T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "aa1c12a1-d7c2-4fb5-a6ba-e517be3589e5",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-04-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-04T08:00:00-05:00",
+      "end": "2026-12-04T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ff206205-a05a-49a7-8806-2d437439e195",
+      "title": "Vajrasattva Retreat 12/4/26 - 12/7/26",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/vajrasattva-retreat-12-4-26-12-7-26",
+      "registrationOpen": true,
+      "online": {
+        "type": "event",
+        "id": "3b9faca6-4f4e-430a-adfc-34343cff1c43",
+        "page": "https://www.example.org/event-details/online-vajrasattva-retreat-12-4-26-12-7-26",
+        "registrationOpen": true
+      },
+      "classId": "c_X6VDS74S9X0J",
+      "start": "2026-12-04T08:30:00-05:00",
+      "end": "2026-12-07T17:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "52d4ab09-a87f-436f-88af-2dff05772021",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-04-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-04T09:00:00-05:00",
+      "end": "2026-12-04T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "13cacfb4-d9fb-4dff-90a9-3166ebcd9182",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-12-06-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-12-06T12:00:00-05:00",
+      "end": "2026-12-06T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "d2f61ec8-b412-4632-994f-4d400e198d2f",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-12-06-15-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-12-06T15:00:00-05:00",
+      "end": "2026-12-06T16:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "41ecc07e-8488-4444-8508-1ede4aa9db47",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-12-06-17-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-12-06T17:00:00-05:00",
+      "end": "2026-12-06T18:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9944a5e1-c0ad-4b22-92c3-6697d3a160c7",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-08-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-08T08:00:00-05:00",
+      "end": "2026-12-08T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "119afddc-2ff8-42fe-8489-be6775f0a468",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-08-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-08T09:00:00-05:00",
+      "end": "2026-12-08T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "a12f30e5-b9c0-497b-924e-b8f0731f204c",
+      "title": "Liberation from Sorrow: Prayers to Green Tara",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/liberation-from-sorrow-prayers-to-green-tara-2026-12-08-17-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_K4R7N1Z4EVW7",
+      "start": "2026-12-08T17:00:00-05:00",
+      "end": "2026-12-08T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ee4cb882-66d1-4bf6-a0a2-75f4532b5eb1",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-12-08-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-12-08T18:45:00-05:00",
+      "end": "2026-12-08T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "574300ca-81a7-4005-aac6-588ca3d162cc",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-09-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-09T08:00:00-05:00",
+      "end": "2026-12-09T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "c8b32a54-af28-43fd-be71-2c33b89b4786",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-09-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-09T09:00:00-05:00",
+      "end": "2026-12-09T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e6a2a1d0-24d9-441f-9225-2eadbc95a96a",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-10-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-10T08:00:00-05:00",
+      "end": "2026-12-10T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "cc5e8d21-feee-40f7-b841-c089ada12f20",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-10-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-10T09:00:00-05:00",
+      "end": "2026-12-10T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "bee19dcb-3064-4a7d-aaa1-516beb5f2c3f",
+      "title": "Offering to the Spiritual Guide (with Tsog)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/offering-to-the-spiritual-guide-with-tsog-2026-12-10-16-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_98VEDY09646T",
+      "start": "2026-12-10T16:00:00-05:00",
+      "end": "2026-12-10T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "4d3fa0ab-5ffb-4cf0-a50f-a3d8d2e1bcd8",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-11-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-11T08:00:00-05:00",
+      "end": "2026-12-11T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "86d575f5-47ae-41c3-b800-67979939900c",
+      "title": "35 Confession Buddhas Practice",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/35-confession-buddhas-practice-2026-12-11-09-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SGWKQZYXXTZW",
+      "start": "2026-12-11T09:00:00-05:00",
+      "end": "2026-12-11T09:20:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9025719a-3138-45d0-8e09-956c5009fb24",
+      "title": "Silent Saturday Retreat - Settling The Mind",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/silent-saturday-retreat-settling-the-mind",
+      "registrationOpen": true,
+      "online": {
+        "type": "event",
+        "id": "73b1f656-5510-4a2a-9139-b6ebf363c107",
+        "page": "https://www.example.org/event-details/online-silent-saturday-retreat-settling-the-mind",
+        "registrationOpen": true
+      },
+      "classId": "c_1S6V1HSV2X0C",
+      "start": "2026-12-12T10:00:00-05:00",
+      "end": "2026-12-12T13:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "80e1a611-888b-40e6-b02d-67a140a9bbab",
+      "title": "Holiday Party with Gift Exchange",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/holiday-party-with-gift-exchange-1",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_YAPP20PHYD00",
+      "start": "2026-12-13T11:00:00-05:00",
+      "end": "2026-12-13T13:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "dc08d934-6503-4b60-a9af-6871177b99d8",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-12-13-14-30",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-12-13T14:30:00-05:00",
+      "end": "2026-12-13T15:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "20383df1-39cf-418f-9497-6b45718695f5",
+      "title": "Heart Jewel Prayers & Silent Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/heart-jewel-prayers-silent-meditation-2026-12-15-08-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BE3A0GKMEXTW",
+      "start": "2026-12-15T08:00:00-05:00",
+      "end": "2026-12-15T09:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "1200 Canal St SW",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "79d207a5-bd1f-45d5-93b3-cc0d57472a49",
+      "title": "Powa: Prayers for the Deceased",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/powa-prayers-for-the-deceased-2026-12-15-16-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_75E6Z44VYR30",
+      "start": "2026-12-15T16:00:00-05:00",
+      "end": "2026-12-15T16:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "74aa5adf-7d3c-4b40-9c06-6760609e91f3",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2026-12-15-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2026-12-15T17:00:00-05:00",
+      "end": "2026-12-15T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "193537dc-ba20-4d43-9894-864e1ac41029",
+      "title": "Teacher Training Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-2026-12-15-18-45",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_3T77XDRNXNZH",
+      "start": "2026-12-15T18:45:00-05:00",
+      "end": "2026-12-15T20:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "47b74702-abd7-4d10-98e5-ba7232a22497",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-12-17-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-12-17T16:15:00-05:00",
+      "end": "2026-12-17T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f3482cff-3300-4cd2-bd69-7f5df0584657",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2026-12-24-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2026-12-24T16:15:00-05:00",
+      "end": "2026-12-24T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "fe7b37ae-1f35-4af7-966f-599ccb8532ed",
+      "title": "Melodious Drum - Kangso - Long Protector Puja)",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/melodious-drum-kangso-long-protector-puja-2026-12-29-16-00",
+      "registrationOpen": false,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_95PZJAB07T5Z",
+      "start": "2026-12-29T16:00:00-05:00",
+      "end": "2026-12-29T19:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "795fc48e-ee49-40db-8303-250186bfb274",
+      "title": "New Years Eve Compassion Prayers by Candlelight",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers", "Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/new-years-eve-compassion-prayers-by-candlelight",
+      "registrationOpen": true,
+      "online": {
+        "type": "event",
+        "id": "58455436-cb53-47f3-a644-652c61b3afb7",
+        "page": "https://www.example.org/event-details/online-new-years-eve-compassion-prayers-by-candlelight",
+        "registrationOpen": true
+      },
+      "classId": "c_TTMCR39XE1C9",
+      "start": "2026-12-31T17:30:00-05:00",
+      "end": "2026-12-31T18:30:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f6046cd8-e3cb-402d-8272-04a8abc3963f",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-01-05-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-01-05T17:00:00-05:00",
+      "end": "2027-01-05T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "c8fdfe39-3982-4130-a98b-0492d44cde37",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-01-07-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-01-07T16:15:00-05:00",
+      "end": "2027-01-07T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "54913bcb-6fc0-414f-bd30-2a4edd980cda",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-01-10-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-01-10T12:00:00-05:00",
+      "end": "2027-01-10T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "334edd32-cf43-42fb-a1b2-4ee1b5229431",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-01-12-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-01-12T17:00:00-05:00",
+      "end": "2027-01-12T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ab68c99a-ee3c-4cdb-8bdb-c6e9fe022eca",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-01-14-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-01-14T16:15:00-05:00",
+      "end": "2027-01-14T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8edfe500-33eb-43d5-bf5a-f855bf800879",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-01-17-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-01-17T12:00:00-05:00",
+      "end": "2027-01-17T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "94debb1b-9ce6-4ca0-9dae-be880ffabfc8",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-01-19-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-01-19T17:00:00-05:00",
+      "end": "2027-01-19T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "d7c5b8aa-624b-48a1-b496-fdee975756f5",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-01-21-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-01-21T16:15:00-05:00",
+      "end": "2027-01-21T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "b25ae049-9d06-4df9-8805-2b89b15b32e6",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-01-24-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-01-24T12:00:00-05:00",
+      "end": "2027-01-24T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "390608f8-7bbb-4a70-b7d4-9f72b46e88bf",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-01-26-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-01-26T17:00:00-05:00",
+      "end": "2027-01-26T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "b653cd86-bdea-408b-9b3e-1947a769f3c2",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-01-28-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-01-28T16:15:00-05:00",
+      "end": "2027-01-28T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "726adfc1-0096-4aff-bce0-0c73bd2b53d1",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-01-31-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-01-31T12:00:00-05:00",
+      "end": "2027-01-31T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "fa9cd922-84f7-451e-aa37-9833f7972560",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-02-02-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-02-02T17:00:00-05:00",
+      "end": "2027-02-02T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e05c29cc-bc7a-4f87-b8a1-65ae95d6fb4a",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-02-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-02T19:00:00-05:00",
+      "end": "2027-02-02T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8d2dfe58-2852-4a39-b4e7-71c253ead24b",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-02-04-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-02-04T16:15:00-05:00",
+      "end": "2027-02-04T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "fb1418a6-2566-4278-9fa2-a220a0317340",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-02-07-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-02-07T12:00:00-05:00",
+      "end": "2027-02-07T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "78ff7534-a811-4c32-ad7f-50d7b71bd3c3",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-07-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-07T19:00:00-05:00",
+      "end": "2027-02-07T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "81d520e3-272f-414f-9ebb-cc3064b5ebcb",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-02-09-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-02-09T17:00:00-05:00",
+      "end": "2027-02-09T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7c71e7b9-c83e-462c-aeb0-fd749d0813fe",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-09-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-09T19:00:00-05:00",
+      "end": "2027-02-09T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "57beac70-6012-4d25-b2fd-02777d199401",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-02-11-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-02-11T16:15:00-05:00",
+      "end": "2027-02-11T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f52e14be-bd23-4116-b8d1-9b25b69fc6d7",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-02-14-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-02-14T12:00:00-05:00",
+      "end": "2027-02-14T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "95145ca7-9ffe-487a-a08b-033cf4532294",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-14-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-14T19:00:00-05:00",
+      "end": "2027-02-14T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8322f291-ad66-4532-8606-2c9a32c104bf",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-02-16-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-02-16T17:00:00-05:00",
+      "end": "2027-02-16T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "b80a6c07-57fc-4004-a75c-b87e0ecdd417",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-16-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-16T19:00:00-05:00",
+      "end": "2027-02-16T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "0e41ad41-d283-4f75-9c90-568065f226c9",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-02-18-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-02-18T16:15:00-05:00",
+      "end": "2027-02-18T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "04badf9b-cdc4-4101-bef0-e94ca3284a48",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-02-21-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-02-21T12:00:00-05:00",
+      "end": "2027-02-21T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9f75b4df-5420-4e54-9cfb-a5f6bd37d0e7",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-21-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-21T19:00:00-05:00",
+      "end": "2027-02-21T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "6df06a11-b9b6-4f2e-878e-dfdc7f4fd69a",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-02-23-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-02-23T17:00:00-05:00",
+      "end": "2027-02-23T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "42415ab1-a13a-4142-8d20-11fff63b85d2",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-23-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-23T19:00:00-05:00",
+      "end": "2027-02-23T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "883eefb1-0177-4a0e-86d1-46afa32e0e5a",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-02-25-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-02-25T16:15:00-05:00",
+      "end": "2027-02-25T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e080d25b-0533-4d0a-abd9-8fa2fa65426a",
+      "title": "The Foundation Program",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2027-02-28-12-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2027-02-28T12:00:00-05:00",
+      "end": "2027-02-28T14:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "51ce7561-3db9-4d6b-87c5-81370f8f1c4a",
+      "title": "Teacher Training Program (TTP)",
+      "summary": "",
+      "description": "",
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/teacher-training-program-ttp-2027-02-28-19-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_P7G9AT02RVGE",
+      "start": "2027-02-28T19:00:00-05:00",
+      "end": "2027-02-28T23:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center Washington DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "354c3101-f30e-4b24-91e9-5c47982127f6",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-03-02-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-03-02T17:00:00-05:00",
+      "end": "2027-03-02T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "fef9fdca-8f15-444c-b1ef-ae0f94dc122c",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-03-04-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-03-04T16:15:00-05:00",
+      "end": "2027-03-04T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "23ed896b-1ad1-40c1-8ef9-5506c8e8e649",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-03-09-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-03-09T17:00:00-05:00",
+      "end": "2027-03-09T17:45:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "68a71278-5ffd-472c-9f91-79608bd0091c",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-03-11-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-03-11T16:15:00-05:00",
+      "end": "2027-03-11T18:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "128cc6f0-1584-45a1-acf5-8c90b548752e",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-03-16-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-03-16T17:00:00-04:00",
+      "end": "2027-03-16T17:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "c11ded99-1ddf-4659-bfdb-34d2c7c046a6",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-03-18-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-03-18T16:15:00-04:00",
+      "end": "2027-03-18T18:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "f8bbe234-a5d3-4fe0-abd8-67ee6f6fe169",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-03-23-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-03-23T17:00:00-04:00",
+      "end": "2027-03-23T17:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ef38d5ed-c1b2-485a-988a-dd95c23f384d",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-03-25-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-03-25T16:15:00-04:00",
+      "end": "2027-03-25T18:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "bd0a84db-ba79-40ab-977e-cd07b78d1dc1",
+      "title": "Dakini Yoga",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/dakini-yoga-2027-03-30-17-00",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_F90B0ZVH6NWK",
+      "start": "2027-03-30T17:00:00-04:00",
+      "end": "2027-03-30T17:45:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "97e2064d-59f1-43cc-b191-14d9d2cf6e9b",
+      "title": "Quick Path to Great Bliss",
+      "summary": "",
+      "description": "",
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/quick-path-to-great-bliss-2027-04-01-16-15",
+      "registrationOpen": false,
+      "online": null,
+      "classId": "c_9F8Y5KKXCDC2",
+      "start": "2027-04-01T16:15:00-04:00",
+      "end": "2027-04-01T18:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "46cc5590-8f1c-4484-8fae-a2a61b1156d8",
+      "title": "Post Fall Festival Retreat With Teacher D. Example",
+      "summary": "",
+      "description": "",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/post-fall-festival-retreat-with-teacher-d-example",
+      "registrationOpen": false,
+      "online": {
+        "type": "iconOnly"
+      },
+      "classId": "c_F8DTZDMEXX1D",
+      "start": "2027-10-15T19:00:00-04:00",
+      "end": "2027-10-17T19:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    }
+  ]
+}

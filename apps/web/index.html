@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="text-scale" content="scale" />
+    <title>KMC DC Events</title>
+    <meta
+      name="description"
+      content="Classes, retreats and chanted prayers at Kadampa Meditation Center DC."
+    />
+    <!-- The browser and status bar match the top bar (theme.css --bar-solid). -->
+    <meta name="theme-color" content="#f9f9f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161618" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- iPhone uses the start-up images (brand-links) only with this tag. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="%APP_SHORT_NAME%" />
+    <!-- brand-links -->
+  </head>
+  <body>
+    <script>
+      // The splash (EV-42) shows from the first frame, except for a shared event's link and
+      // /get-app's Open the app (IN-10), which go straight to the app ("link"), and in browser
+      // tests ("off"), which switch it on with kmcdc.splash = "on" when they test it.
+      try {
+        const setting = localStorage.getItem("kmcdc.splash");
+        const fromGet = sessionStorage.getItem("kmcdc.fromGet") !== null;
+        sessionStorage.removeItem("kmcdc.fromGet");
+        if (location.pathname.startsWith("/e/") || fromGet)
+          document.documentElement.dataset.nosplash = "link";
+        else if (setting === "off" || (navigator.webdriver && setting !== "on"))
+          document.documentElement.dataset.nosplash = "off";
+      } catch {
+        // No storage: the splash shows.
+      }
+    </script>
+    <div
+      id="splash"
+      class="splash"
+      role="img"
+      aria-label="Kadampa Meditation Center DC. Everyone Welcome."
+    >
+      <div class="splash-content">
+        <img
+          class="splash-logo"
+          src="../../brand/images/splash-logo.png"
+          alt=""
+          width="184"
+          height="184"
+        />
+        <p class="splash-title">Kadampa Meditation<br />Center DC</p>
+        <svg class="splash-divider" width="220" height="26" viewBox="0 0 220 26" aria-hidden="true">
+          <path
+            class="wave"
+            d="M2 16 C 40 4, 70 22, 96 13"
+            fill="none"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="wave"
+            d="M218 16 C 180 4, 150 22, 124 13"
+            fill="none"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M110 2 C 116 9, 118 16, 110 24 C 102 16, 104 9, 110 2 Z"
+            fill="#F4A6B5"
+            stroke="#D9566E"
+            stroke-width="1.2"
+          />
+          <path
+            d="M110 24 C 104 20, 99 15, 98 9 C 104 11, 108 16, 110 24 Z M110 24 C 116 20, 121 15, 122 9 C 116 11, 112 16, 110 24 Z"
+            fill="#F8C3CD"
+            stroke="#D9566E"
+            stroke-width="1"
+          />
+        </svg>
+        <p class="splash-welcome">Everyone Welcome</p>
+        <div class="splash-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

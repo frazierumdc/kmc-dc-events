@@ -1,0 +1,213 @@
+{
+  "schema": 2,
+  "version": "20261009T150000Z-fc1d29fa",
+  "publishedAt": "2026-10-09T15:00:00Z",
+  "timezone": "America/New_York",
+  "site": {
+    "center": {
+      "name": "Kadampa Meditation Center DC",
+      "shortName": "KMC DC"
+    },
+    "homeCity": "Washington",
+    "contact": {
+      "phoneDisplay": "202.555.0100",
+      "phoneE164": "+12025550100",
+      "email": "info@example.org"
+    },
+    "links": {
+      "calendar": "https://www.example.org/calendar",
+      "onlineClasses": "https://www.example.org/online-classes"
+    },
+    "categoryKinds": {
+      "Weekly Meditation Classes": "class",
+      "Study Programs": "class",
+      "Richmond Branch Classes": "class",
+      "Retreats & Special Events": "special",
+      "Online Special Events": "special",
+      "Chanted Prayers": "prayer"
+    }
+  },
+  "events": [
+    {
+      "id": "c106c033-66a8-4f03-87eb-d9d4730f84ff",
+      "title": "International Fall Festival",
+      "summary": "Six days of teachings and meditations, in person and online",
+      "description": "Registration for In Person at Kadampa Meditation Center Spain in Malaga, Spain and online at https://kadampafestivals.org/fall\n\nSix days of teachings and guided meditations with a visiting teacher.\n\nEach day has two teachings, a guided meditation and time for questions, in person and by live stream. Everyone is welcome.",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/international-fall-festival",
+      "registrationOpen": false,
+      "classId": "c_XVJJBY9684E7",
+      "start": "2026-10-09T19:30:00-04:00",
+      "end": "2026-10-15T12:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "KMC Málaga - Centro de Meditación Kadamp",
+        "address": "C. Cuarteles, 7, Distrito Centro, 29002 Málaga, Spain",
+        "city": "Málaga",
+        "geo": {
+          "lat": 36.7148168,
+          "lng": -4.426769999999999
+        }
+      }
+    },
+    {
+      "id": "09ffc1ee-bbce-47f9-ab87-7b147ccf21b7",
+      "title": "Richmond Meditation Class",
+      "summary": null,
+      "description": null,
+      "categories": ["Richmond Branch Classes"],
+      "page": "https://www.example.org/event-details/richmond-meditation-class-16",
+      "registrationOpen": true,
+      "classId": "c_VVCAEVFKWNB3",
+      "start": "2026-10-12T19:00:00-04:00",
+      "end": "2026-10-12T20:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Diversity Thrift",
+        "address": "1407 Sherwood Ave, Richmond, VA 23220, USA",
+        "city": "Richmond",
+        "geo": {
+          "lat": 37.5696396,
+          "lng": -77.4549297
+        }
+      }
+    },
+    {
+      "id": "4e19342f-344f-43e2-b641-676ce1a90a30",
+      "title": "Tuesday Rest and Reflect",
+      "summary": "A relaxing 30-minute meditation class designed to help you let go of the day and return home feeling calm, clear, and refreshed.",
+      "description": "With Buddhist Teacher A. Example\n\nEach session includes simple guided meditations to help settle your mind, release stress and negativity, and create space for peace and positivity. You'll also have a chance to reflect on uplifting perspectives that you can take into the rest of your week.\n\nWhether you've had a busy day at work or simply need a moment to pause, this class offers the perfect opportunity to unwind, recharge, and reconnect with your inner peace.\n\nEveryone is welcome—no previous meditation experience is needed.",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/tuesday-rest-and-reflect-2026-10-13-18-00",
+      "registrationOpen": true,
+      "classId": "c_40R4BJB0FDTY",
+      "start": "2026-10-13T18:00:00-04:00",
+      "end": "2026-10-13T18:30:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "9cdbd199-88a1-4b81-a6f3-eb83bb122901",
+      "title": "Online: Silent Saturday: A Heart of Gratitude",
+      "summary": "Step back, reconnect with a grateful heart, and cultivate a more positive, balanced perspective.",
+      "description": "with Teacher C. Example\n\nStep back, reconnect with a grateful heart, and cultivate a more positive, balanced perspective. By learning to recognize the kindness we have received throughout our life, we naturally reduce negative states such as resentment, irritation, and loneliness, and instead develop patience, love, and joy.\n\nThrough these contemplations, we can begin to see others—not as sources of frustration—but as sources of kindness and opportunity. Come and discover how a heart of gratitude can bring peace to your mind and harmony to your relationships.\n\nThis half-day silent, gadget-free retreat offers a chance to step away from the constant noise of life and our devices, and instead reconnect with the clarity and calm within. In the quiet, you’ll experience the liberating power of silence, introspection, and meditation—an opportunity to reset your mind and return to your life feeling refreshed, grounded, and inspired. Suitable for both new and experienced meditators alike.\n\nWhat to expect on retreat day:\n\n• Simple and profound guided meditations\n• Brief teachings about each meditation\n• Silent breaks for tea, contemplation or reading\n• Opportunities for Q&A and discussion at the end\n• No experience necessary; everyone is welcome\n\nSchedule:\n\n• 10 to 10:45AM: Teaching and Guided Meditation\n• 10:45 to 11:15AM: Break\n• 11:15 to 11:45AM: Guided Meditation\n• 11:45AM to 12:15PM: Break\n• 12:15 to 12:45: Guided Meditation\n• 12:45 to 1PM: Optional Q&A\n\nThere is a complementary lunch following the retreat.",
+      "categories": ["Online Special Events"],
+      "page": "https://www.example.org/event-details/online-silent-saturday-a-heart-of-gratitude",
+      "registrationOpen": true,
+      "classId": "c_5PZ62ZDQK8FA",
+      "start": "2026-10-17T10:00:00-04:00",
+      "end": "2026-10-17T13:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": true,
+        "name": "Online Conference",
+        "address": null,
+        "city": null,
+        "geo": null
+      }
+    },
+    {
+      "id": "57ef9d42-e560-40c3-8499-75e16a7fedfc",
+      "title": "Silent Saturday Retreat - A Heart of Gratitude",
+      "summary": "This half-day silent, gadget-free retreat offers a chance to step away from the constant noise of life and our devices, and instead reconnect with the clarity and calm within.",
+      "description": null,
+      "categories": ["Retreats & Special Events"],
+      "page": "https://www.example.org/event-details/silent-saturday-retreat-a-heart-of-gratitude",
+      "registrationOpen": true,
+      "classId": "c_2C9V8Y2HDJY4",
+      "start": "2026-10-17T10:00:00-04:00",
+      "end": "2026-10-17T13:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "75442f2d-3890-4515-a92a-d6043fbe0cb5",
+      "title": "The Foundation Program",
+      "summary": "Deepen your practice through a committed study program.",
+      "description": null,
+      "categories": ["Study Programs"],
+      "page": "https://www.example.org/event-details/the-foundation-program-2026-10-18-12-00",
+      "registrationOpen": false,
+      "classId": "c_N6XSQ11C0WTP",
+      "start": "2026-10-18T12:00:00-04:00",
+      "end": "2026-10-18T14:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "00d8b6ab-9eeb-4b52-9da1-72ffd600353d",
+      "title": "Wishfulfilling Jewel with Tsog",
+      "summary": "This practice is the heart essence of Kadampa Buddhism.",
+      "description": null,
+      "categories": ["Chanted Prayers"],
+      "page": "https://www.example.org/event-details/wishfulfilling-jewel-with-tsog-2026-10-18-17-00",
+      "registrationOpen": false,
+      "classId": "c_0EP710PSBWX9",
+      "start": "2026-10-18T17:00:00-04:00",
+      "end": "2026-10-18T18:15:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "11daf079-2393-4885-9a77-03437e788b04",
+      "title": "Center Cherishing",
+      "summary": "Join us for Temple Cherishing Day from 2 to 5pm. Drop in any time during this period to help with mindful cleaning, organization and enjoy meaningful conversations and community.",
+      "description": null,
+      "categories": [],
+      "page": "https://www.example.org/event-details/center-cherishing",
+      "registrationOpen": true,
+      "classId": "c_ASMF39GZXPPS",
+      "start": "2026-11-08T14:00:00-05:00",
+      "end": "2026-11-08T17:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    }
+  ]
+}

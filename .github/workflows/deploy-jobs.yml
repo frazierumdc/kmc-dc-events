@@ -1,0 +1,74 @@
+name: Deploy jobs
+
+# Builds the image of the two Cloud Run jobs, update-schedule and send-email (D63,
+# apps/job), and gives it to both in the branch's Google project. Their accounts, settings
+# and secrets are made once by scripts/setup-update-job.sh; this only changes the code they
+# run. As jobs-deployer@, which only this workflow may sign in as.
+on:
+  push:
+    # A stage's jobs must exist first (scripts/setup-update-job.sh), or its deploy fails.
+    branches: [dev, test, main]
+    paths:
+      - "apps/job/**"
+      - "packages/**"
+      - "data/site.json"
+      - "data/pictures/**"
+      - "pnpm-lock.yaml"
+      - ".dockerignore"
+      - ".github/workflows/deploy-jobs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-jobs-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: contains(fromJSON('["dev", "test", "main"]'), github.ref_name)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: ${{ github.ref_name == 'test' && 'jobs-test' || github.ref_name == 'main' && 'jobs-prod' || 'jobs-dev' }}
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      PROJECT: ${{ vars.JOBS_PROJECT }}
+      REGION: us-east4
+      IMAGE: us-east4-docker.pkg.dev/${{ vars.JOBS_PROJECT }}/jobs/job
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build the image
+        run: docker build -f apps/job/Dockerfile -t "$IMAGE:$GITHUB_SHA" .
+      - name: Check the image starts each program
+        # Each exits 2 with its usage, having loaded all its code (the share pictures' fonts
+        # and drawing library among it); the job itself says which setting it lacks.
+        run: |
+          expect() { # exit code, then the command
+            want="$1"; shift
+            set +e; docker run --rm "$IMAGE:$GITHUB_SHA" "$@"; got=$?; set -e
+            if [ "$got" != "$want" ]; then echo "::error::$* exited $got, not $want"; exit 1; fi
+          }
+          expect 2 node packages/publish/publish-schedule.ts
+          expect 2 node packages/mailer/src/cli.ts
+          expect 1 node apps/job/src/main.ts
+      - uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.JOBS_SERVICE_ACCOUNT }}
+      - name: Push the image
+        run: |
+          gcloud auth configure-docker us-east4-docker.pkg.dev --quiet
+          docker push "$IMAGE:$GITHUB_SHA"
+      - name: Give it to both jobs
+        # Only the image and the names the code needs; every other setting stays as the
+        # setup script or the owner left it.
+        run: |
+          for job in update-schedule send-email; do
+            gcloud run jobs update "$job" --project "$PROJECT" --region "$REGION" \
+              --image "$IMAGE:$GITHUB_SHA" \
+              --update-env-vars "JOB=$job,PROJECT=$PROJECT,REGION=$REGION,GITHUB_REPOSITORY=$GITHUB_REPOSITORY" \
+              --format "value(name)"
+          done

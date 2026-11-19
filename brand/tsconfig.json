@@ -1,0 +1,4 @@
+{
+  "extends": "../tsconfig.base.json",
+  "include": ["bands.ts", "generate.ts", "screens.ts", "startup-images.ts"]
+}

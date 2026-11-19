@@ -1,0 +1,32 @@
+name: Deploy
+
+# Deploys the app with the schedule already on the site (docs/architecture/ci-cd.md): dev to
+# the dev site, test to the test site, main to the prod site (D53). Every site stays out of
+# search engines (D30). A new schedule comes from each stage's own update job on Google
+# (4 AM and 4 PM, after a website change, or run by hand), never from here.
+# Skipped when a push changes only docs (Markdown anywhere, or docs/); the site wouldn't change.
+on:
+  push:
+    branches: [dev, test, main]
+    paths-ignore: ["**.md", "docs/**"]
+  workflow_dispatch:
+    inputs:
+      kill-switch:
+        type: boolean
+        default: false
+        description: "Kill switch: deploy a service worker that removes itself (docs/workflow/runbooks.md)"
+
+permissions:
+  contents: read
+
+# No tests here: the code reached the branch through a pull request whose CI passed (D42).
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-site.yml
+    permissions:
+      contents: read
+      id-token: write
+    # The update job publishes only the schedule's files and keeps every other file of the
+    # version now live, so a kill switch stays in place until the next normal deploy.
+    with:
+      kill-switch: ${{ inputs.kill-switch == true }}

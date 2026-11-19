@@ -1,0 +1,50 @@
+3 things to check in Wix
+
+Found by the update on Friday, October 16, 2026, at 4:07 PM.
+
+1. Sunday Morning Meditation is listed twice on Nov 22 and Dec 6, 2026, 10:00 AM at KMC DC.
+   Possible fix: keep one listing and remove the other, unless people registered for it.
+   Nov 22:
+     First: https://www.example.org/event-details/sunday-morning-meditation-2026-11-22-10-00
+     Second: https://www.example.org/event-details/sunday-morning-meditation-2026-11-22-10-00-1
+   Dec 6:
+     First: https://www.example.org/event-details/sunday-morning-meditation-2026-12-06-10-00
+     Second: https://www.example.org/event-details/sunday-morning-meditation-2026-12-06-10-00-1
+
+2. Wednesday Step by Step Meditation is listed twice on 8 Wednesdays (Dec 2, 2026 – Feb 3, 2027), 7:00 PM at KMC DC.
+   Possible fix: keep one listing and remove the other, unless people registered for it.
+   Dec 2:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-02-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-02-19-00-1
+   Dec 9:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-09-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-09-19-00-1
+   Dec 16:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-16-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-16-19-00-1
+   Jan 6:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-06-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-06-19-00-1
+   Jan 13:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-13-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-13-19-00-1
+   Jan 20:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-20-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-20-19-00-1
+   Jan 27:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-27-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-27-19-00-1
+   Feb 3:
+     First: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-02-03-19-00
+     Second: https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-02-03-19-00-1
+
+3. Special Sunday Morning Meditation: From Judgement to Compassion with Teacher E. Example and Sunday Morning Meditation are both at 10:00 AM on Sun, Nov 29, 2026, at KMC DC.
+   Possible fix: if one replaces the other, cancel the one that isn't happening.
+   Nov 29 events:
+     First: https://www.example.org/event-details/special-sunday-morning-meditation-from-judgement-to-compassion-with-teacher-e-example
+     Second: https://www.example.org/event-details/sunday-morning-meditation-2026-11-29-10-00
+
+The app shows what the website shows; changes made in Wix reach it at the next update.
+
+--
+You get this because you're on the KMC DC management staff list.

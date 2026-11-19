@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2023", "dom", "dom.iterable"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "types": ["vite/client", "node"]
+  },
+  "include": [
+    "src",
+    "test",
+    "vite.config.ts",
+    "feed-dev-server.ts",
+    "push-config.ts",
+    "push-config.test.ts",
+    "build-config.ts",
+    "build-config.test.ts"
+  ]
+}

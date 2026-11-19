@@ -1,0 +1,92 @@
+name: Deploy functions
+
+# Deploys the timers (apps/functions, D54), Update schedule's and KMC DC Events' (D51), and the
+# Wix signal's two functions (D28, slice 1.9), to the
+# branch's own project: dev to your-project-id-dev, test to your-project-id-test, main to
+# your-project-id; each timer starts only its own project's jobs (D53, D63). The project's two
+# Cloud Run jobs must exist first (scripts/setup-update-job.sh). Nothing is deployed from a Mac. Each project's deploy identity, which only
+# this workflow on its branch may use, can change functions and their timers but not the site
+# (docs/architecture/ci-cd.md).
+on:
+  push:
+    branches: [dev, test, main]
+    paths:
+      - "apps/functions/**"
+      # The bundle is built from these too: the workspace packages apps/functions depends on.
+      - "packages/cloud/**"
+      - "packages/domain/**"
+      - "packages/sync/**"
+      - "data/site.json"
+      - "firebase.json"
+      - "pnpm-lock.yaml"
+      - ".github/workflows/deploy-functions.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-functions-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: contains(fromJSON('["dev", "test", "main"]'), github.ref_name)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: ${{ github.ref_name == 'test' && 'functions-test' || github.ref_name == 'main' && 'functions-prod' || 'functions-dev' }}
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+      - run: pnpm --filter @kmcdc/functions typecheck
+      - run: pnpm exec vitest run --project @kmcdc/functions
+      - uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.FUNCTIONS_SERVICE_ACCOUNT }}
+      # The stage the check names in its log lines (D57), as a Firebase setting: never in code.
+      # dev, test or prod, as the environments above name them: main is prod.
+      # In the folder Firebase uploads (firebase.json, ADR 0018), where it reads .env; the
+      # deploy's own build, which fills that folder, leaves the file in place.
+      - name: The functions' settings
+        run: |
+          mkdir -p apps/functions/deploy
+          printf 'STAGE=%s\n' "$STAGE" > apps/functions/deploy/.env
+        env:
+          STAGE: ${{ github.ref_name == 'main' && 'prod' || github.ref_name }}
+      - name: Deploy to Cloud Functions
+        run: >
+          pnpm exec firebase deploy --only functions --non-interactive
+          --project "${{ vars.FIREBASE_PROJECT }}"
+          --message "$GITHUB_SHA"
+      # Each timer's job must call its function as schedule-timer@, the only account allowed to
+      # (roles/run.invoker, which the deploy sets to the function's own account). The Firebase CLI
+      # leaves the job's account as it was, so set it on every deploy (D54).
+      - name: The timers call as schedule-timer@
+        run: |
+          for fn in startUpdateSchedule startEventsEmail; do
+            gcloud scheduler jobs update http "firebase-schedule-$fn-us-east4" \
+              --location us-east4 --project "$PROJECT" \
+              --oidc-service-account-email "schedule-timer@$PROJECT.iam.gserviceaccount.com" \
+              --format "value(httpTarget.oidcToken.serviceAccountEmail)"
+          done
+          # The reminders' timer calls as notify-lists@, the account its function runs as (D69).
+          # Updating it leaves a paused timer paused (NT-50).
+          gcloud scheduler jobs update http firebase-schedule-sendEventReminders-us-east4 \
+            --location us-east4 --project "$PROJECT" \
+            --oidc-service-account-email "notify-lists@$PROJECT.iam.gserviceaccount.com" \
+            --format "value(httpTarget.oidcToken.serviceAccountEmail)"
+          # The safety net's timer runs as the Wix signal's account (D64); only where that
+          # account exists (scripts/setup-wix-signal.sh).
+          if gcloud scheduler jobs describe firebase-schedule-startCheck-us-east4 \
+            --location us-east4 --project "$PROJECT" >/dev/null 2>&1; then
+            gcloud scheduler jobs update http firebase-schedule-startCheck-us-east4 \
+              --location us-east4 --project "$PROJECT" \
+              --oidc-service-account-email "wix-signal@$PROJECT.iam.gserviceaccount.com" \
+              --format "value(httpTarget.oidcToken.serviceAccountEmail)"
+          fi
+        env:
+          PROJECT: ${{ vars.FIREBASE_PROJECT }}

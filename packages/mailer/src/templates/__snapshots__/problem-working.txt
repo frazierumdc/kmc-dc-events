@@ -1,0 +1,8 @@
+Schedule copying works again
+
+The update at Saturday, October 17, 2026, at 4:07 PM copied the schedule again, after failing since Saturday, October 17, 2026, at 4:07 AM. Changes made in Wix meanwhile are in the app now.
+
+The Update schedule job: https://console.cloud.google.com/run/jobs/details/us-east4/update-schedule/executions?project=your-project-id-dev
+
+--
+You get this because you're on the KMC DC app admins list.

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="text-scale" content="scale" />
+    <title>Get KMC DC Events</title>
+    <meta
+      name="description"
+      content="Every class and event at Kadampa Meditation Center DC, one tap away. Add the free app to your Home Screen: no app store, no account."
+    />
+    <meta name="theme-color" content="#cde2f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#162a40" media="(prefers-color-scheme: dark)" />
+    <!-- Added from here, the Home Screen gets the app itself: its name, icon, start-up images
+         and manifest (added by the build), as from the app's own page (IN-10). -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="%APP_SHORT_NAME%" />
+    <!-- brand-links -->
+    <link rel="canonical" href="%GET_URL%" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KMC DC Events" />
+    <meta property="og:title" content="Get KMC DC Events" />
+    <meta
+      property="og:description"
+      content="Every class and event at Kadampa Meditation Center DC, one tap away. Add the free app to your Home Screen: no app store, no account."
+    />
+    <meta property="og:url" content="%GET_URL%" />
+    <meta property="og:image" content="%GET_PREVIEW%" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta
+      property="og:image:alt"
+      content="The KMC DC Events app icon: Kadampa Meditation Center DC"
+    />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      // Opened from the Home Screen icon (full screen, from nowhere), this page goes straight
+      // to the schedule, in case the phone kept this page's address for the icon; opened from
+      // the app's Settings, it stays (IN-10).
+      if (
+        (matchMedia("(display-mode: standalone)").matches || navigator.standalone) &&
+        !document.referrer
+      )
+        location.replace("/");
+    </script>
+  </head>
+  <body class="get">
+    <nav class="get-band get-backbar" id="get-back" aria-label="Back" hidden>
+      <div class="get-inner"><a href="/" class="get-to-app">‹ Back to the app</a></div>
+    </nav>
+    <header class="get-band get-hero">
+      <div class="get-inner get-hero-in">
+        <div class="get-brand">
+          <img src="/apple-touch-icon-180x180.png" alt="" width="52" height="52" />
+          <div>
+            <h1>KMC DC Events</h1>
+            <span>Kadampa Meditation Center DC</span>
+          </div>
+        </div>
+        <p class="get-tagline">Classes and events at KMC DC</p>
+        <p class="get-best" id="get-best">The app works best from your Home Screen.</p>
+        <a class="get-open-btn" href="/">Open the app</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="get-band get-qr" id="get-qr" aria-labelledby="get-qr-h" hidden>
+        <div class="get-inner get-qr-in">
+          <span class="get-code" role="img" aria-label="QR code for %GET_HOST%/get-app"
+            >%GET_QR%</span
+          >
+          <div>
+            <h2 id="get-qr-h">Scan with your phone’s camera</h2>
+            <p>This page opens on your phone, with the steps for your phone.</p>
+            <p class="get-muted">
+              Or send yourself the link: <span class="get-select">%GET_HOST%/get-app</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="get-band"><div class="get-inner" id="get-root"></div></div>
+      <noscript>
+        <div class="get-band">
+          <p class="get-inner">
+            Open this page on your phone, in Safari on an iPhone or Chrome on Android, and add it
+            from the browser’s Share or menu button with Add to Home Screen.
+          </p>
+        </div>
+      </noscript>
+    </main>
+
+    <footer class="get-band get-foot">
+      <div class="get-inner">
+        <p>
+          KMC DC Events is a free app from Kadampa Meditation Center DC. Questions:
+          <span class="get-select">contact@example.org</span>
+        </p>
+        <p><a href="/">%GET_HOST%</a> · <a href="/privacy">Privacy</a></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/get-main.tsx"></script>
+  </body>
+</html>

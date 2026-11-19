@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-10-07T18:38:00.000Z",
+  "window": { "from": "2026-10-06T18:38:00.000Z", "to": "2027-11-11T18:38:00.000Z" },
+  "access": "visitor",
+  "count": 5,
+  "events": [
+    {
+      "id": "3efe9c7a-d27a-480c-912b-3ba7ed7de483",
+      "slug": "wednesday-step-by-step-meditation-2026-10-07-19-00",
+      "title": "Wednesday Step by Step Meditation",
+      "status": "UPCOMING",
+      "shortDescription": "Deepen your meditation practice by exploring key meditations on the stages of the path to inner peace.",
+      "description": {
+        "nodes": [
+          {
+            "type": "PARAGRAPH",
+            "nodes": [{ "type": "TEXT", "textData": { "text": "All are welcome." } }]
+          }
+        ]
+      },
+      "location": {
+        "name": "Kadampa Meditation Center DC",
+        "type": "VENUE",
+        "address": {
+          "formattedAddress": "1200 Canal St SW, Washington, DC 20024, USA",
+          "city": "Washington",
+          "subdivision": "DC",
+          "postalCode": "20024-3522",
+          "country": "US",
+          "geocode": { "latitude": 38.8762356, "longitude": -77.0117944 }
+        }
+      },
+      "dateAndTimeSettings": {
+        "startDate": "2026-10-07T23:00:00.000Z",
+        "endDate": "2026-10-08T00:00:00.000Z",
+        "timeZoneId": "America/New_York",
+        "recurrenceStatus": "RECURRING_UPCOMING",
+        "recurringEvents": { "categoryId": "f736d09f-21b3-4638-9981-32b3128da441" }
+      },
+      "eventPageUrl": {
+        "base": "https://www.example.org",
+        "path": "/event-details/wednesday-step-by-step-meditation-2026-10-07-19-00"
+      },
+      "registration": { "type": "TICKETING", "status": "OPEN_TICKETS" },
+      "categories": [
+        { "id": "7cbb60f2-cb91-4e5b-b6cc-8769db81ab9b", "name": "Weekly Meditation Classes" },
+        {
+          "id": "f736d09f-21b3-4638-9981-32b3128da441",
+          "name": "Wednesday Step by Step Meditation"
+        }
+      ],
+      "mainImage": { "url": "https://static.wixstatic.com/media/example.jpg" },
+      "createdDate": "2026-07-24T01:32:39.853Z",
+      "updatedDate": "2026-10-07T01:51:59.000Z",
+      "publishedDate": "2026-07-24T01:32:40.053Z"
+    },
+    {
+      "id": "fixture-online-0001",
+      "slug": "online-wednesday-step-by-step-meditation-2026-10-07-19-00",
+      "title": "Online: Wednesday Step by Step Meditation",
+      "status": "UPCOMING",
+      "location": { "name": "Online Conference", "type": "ONLINE" },
+      "dateAndTimeSettings": {
+        "startDate": "2026-10-07T23:00:00.000Z",
+        "endDate": "2026-10-08T00:00:00.000Z",
+        "timeZoneId": "America/New_York"
+      },
+      "registration": { "type": "RSVP", "status": "OPEN_RSVP" },
+      "categories": [{ "id": "fixture-category-online", "name": "Online Classes" }],
+      "publishedDate": "2026-07-24T01:32:40.053Z"
+    },
+    {
+      "id": "fixture-study-0001",
+      "slug": "foundation-program-2026-10-08-19-00",
+      "title": "Foundation Program",
+      "status": "STARTED",
+      "location": {
+        "name": "1200 Canal St SW",
+        "type": "VENUE",
+        "address": { "formattedAddress": "1200 Canal St SW, Washington, DC 20024, USA" }
+      },
+      "dateAndTimeSettings": {
+        "startDate": "2026-10-08T23:00:00.000Z",
+        "endDate": "2026-10-09T01:00:00.000Z",
+        "timeZoneId": "America/New_York"
+      },
+      "registration": { "type": "TICKETING", "status": "CLOSED_AUTOMATICALLY" },
+      "categories": [{ "id": "fixture-category-study", "name": "Study Programs" }],
+      "publishedDate": "2026-07-24T01:32:40.053Z"
+    },
+    {
+      "id": "fixture-nocategory-0001",
+      "title": "Special Event Without a Category",
+      "status": "UPCOMING",
+      "location": { "name": "Kadampa Meditation Center DC", "type": "VENUE", "address": {} },
+      "dateAndTimeSettings": {
+        "startDate": "2026-10-10T14:00:00.000Z",
+        "endDate": "2026-10-10T16:00:00.000Z",
+        "timeZoneId": "America/New_York"
+      },
+      "categories": [],
+      "publishedDate": "2026-07-24T01:32:40.053Z"
+    },
+    {
+      "title": "Unreadable: no id",
+      "status": "UPCOMING"
+    }
+  ]
+}

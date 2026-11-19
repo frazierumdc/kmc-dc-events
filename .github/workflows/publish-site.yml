@@ -1,0 +1,101 @@
+name: Publish site
+
+# Builds the app and deploys it to Firebase Hosting with the schedule already on the site.
+# The only way the app is deployed, from deploy.yml (docs/architecture/ci-cd.md); a new
+# schedule is published by the stage's update job on Google, without a build (ADR 0017).
+# The branch picks the site: dev → the dev site, test → the test site, main → the prod site
+# (D53), each with its own schedule; every site stays out of search engines (firebase.json, D30).
+on:
+  workflow_call:
+    inputs:
+      kill-switch:
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: ${{ github.ref_name == 'test' && 'test' || github.ref_name == 'main' && 'prod' || 'dev' }}
+      url: ${{ vars.PUBLIC_BASE_URL }}
+    # Deploys never overlap. If a waiting deploy is replaced by a newer one, the newer one
+    # builds the app from the branch with a current schedule all the same.
+    concurrency:
+      group: publish-${{ github.ref_name }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+      - uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.DEPLOY_SERVICE_ACCOUNT }}
+      # The messaging service's settings for the app (D65): the stage's Firebase web app's and
+      # the public half of its web push key, from Secret Manager (scripts/setup-notifications.sh).
+      # Neither is a secret. A stage without them is built without notifications.
+      - name: Read the messaging settings
+        run: |
+          project="${{ vars.FIREBASE_PROJECT }}"
+          app="$(pnpm exec firebase apps:list WEB --project "$project" --json | jq -r '[.result[]?.appId][0] // empty')"
+          key="$(gcloud secrets versions access latest --secret PUSH_PUBLIC_KEY --project "$project" 2>/dev/null || true)"
+          if [ -z "$app" ] || [ -z "$key" ]; then
+            echo "::notice::No web app or web push key in $project: built without notifications."
+            exit 0
+          fi
+          config="$(pnpm exec firebase apps:sdkconfig WEB "$app" --project "$project" --json |
+            jq -ce '.result.sdkConfig | {apiKey, appId, messagingSenderId, projectId}')"
+          { echo "WEB_APP_CONFIG=$config"; echo "PUSH_PUBLIC_KEY=$key"; } >> "$GITHUB_ENV"
+      # The build id comes from the commit, so a schedule update rebuilds the same app and
+      # phones see no new version (EV-21).
+      - name: Build
+        run: |
+          BUILD_ID="$(TZ=UTC git show -s --format=%cd --date=format-local:%Y%m%d HEAD)-${GITHUB_SHA::7}" \
+            pnpm build
+        env:
+          APP_ENV: ${{ vars.APP_ENV }}
+          # Where the stage has a live record (NT-1); empty builds an app without the listener.
+          LIVE_URL: ${{ vars.LIVE_URL }}
+          # The kill switch replaces the app's service worker with one that removes itself.
+          KILL_SWITCH: ${{ inputs.kill-switch && '1' || '' }}
+      # From the site itself.
+      - name: Keep the published schedule
+        run: |
+          site="${{ vars.PUBLIC_BASE_URL }}"
+          dir=apps/web/dist/v2/feed
+          mkdir -p "$dir/snapshots"
+          # Hosting answers a missing file with the app's page, so check it's a manifest.
+          if ! curl -fsS "$site/v2/feed/manifest.json" -o manifest.tmp ||
+             ! path="$(jq -re 'select(.schema == 2) | .snapshots["2"]' manifest.tmp)"; then
+            echo "No schedule published yet; the update job will publish one."
+            exit 0
+          fi
+          mv manifest.tmp "$dir/manifest.json"
+          curl -fsS "$site$path" -o "apps/web/dist$path"
+          cp "apps/web/dist$path" "$dir/latest.json"
+          echo "Kept $(jq -r .version "$dir/manifest.json")"
+      # iPhone's Add to calendar opens these (EV-35).
+      - name: Write the calendar files
+        run: node packages/publish/calendar-files.ts apps/web/dist/v2/feed "${{ vars.PUBLIC_BASE_URL }}"
+      # A shared link previews as the event: its name, when and where, and its picture (EV-35).
+      - name: Write the event pages and share pictures
+        run: node packages/publish/event-pages.ts apps/web/dist "${{ vars.PUBLIC_BASE_URL }}"
+      - name: Deploy to Firebase Hosting
+        run: >
+          pnpm exec firebase deploy --only hosting --non-interactive
+          --project "${{ vars.FIREBASE_PROJECT }}"
+          --message "$GITHUB_SHA code${{ inputs.kill-switch && ' (kill switch)' || '' }}"
+      # Open apps listen to this one record (NT-1, D64): it holds only the version of the
+      # schedule now on the site, and they load the schedule from the site. A write that
+      # fails is a warning: apps on screen check the site every minute anyway (NT-2).
+      - name: Tell open apps
+        if: vars.LIVE_URL != ''
+        continue-on-error: true
+        run: |
+          version="$(jq -re .version apps/web/dist/v2/feed/manifest.json)"
+          pnpm exec firebase database:set /live/version --data "\"$version\"" --force \
+            --non-interactive --project "${{ vars.FIREBASE_PROJECT }}"

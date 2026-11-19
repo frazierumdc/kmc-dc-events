@@ -1,0 +1,512 @@
+/* ---------- Notifications in Settings (NT-17 – NT-19, NT-30) ---------- */
+
+.ui-notify-entry {
+  margin-bottom: 16px;
+}
+
+/* "On" or "Off" at the end of Settings' Notifications row. */
+.ui-info-value {
+  flex: 0 0 auto;
+  color: var(--muted);
+}
+
+.ui-notify-lead {
+  margin: 4px 8px 20px;
+  font-size: 1.06rem;
+  line-height: 1.4;
+}
+
+.ui-notify-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.ui-notify-main:disabled {
+  opacity: 0.6;
+}
+
+/* A plain grey box: Add the app first (NT-19), or refused in the phone's settings (NT-18). */
+.ui-notify-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 20px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--pressed);
+}
+
+.ui-notify-box b {
+  font-weight: 400;
+}
+
+.ui-notify-steps {
+  margin: 0;
+  padding: 6px 14px 10px 36px;
+}
+
+.ui-notify-steps li {
+  padding: 6px 0;
+  line-height: 1.35;
+}
+
+.ui-notify-card {
+  margin-bottom: 8px;
+}
+
+.ui-notify-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 14px;
+}
+
+/* Rows in a card, divided as iPhone's settings are; Android's Material rows aren't. */
+.ui-notify-row + .ui-notify-row {
+  position: relative;
+}
+
+.ui-notify-row + .ui-notify-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 14px;
+  border-top: 0.5px solid var(--line);
+}
+
+[data-platform="android"] .ui-notify-row + .ui-notify-row::before {
+  display: none;
+}
+
+/* An event's picture beside its name (slice 1.13); its kind's colour while it loads and
+   when there is none (D45). */
+.ui-notify-ph {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--pressed);
+}
+
+.ui-notify-ph img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ui-notify-ph[data-kind="class"] {
+  background: var(--class-block);
+}
+
+.ui-notify-ph[data-kind="branch"] {
+  background: var(--branch-block);
+}
+
+.ui-notify-ph[data-kind="elsewhere"] {
+  background: var(--elsewhere-block);
+}
+
+/* The two study programs share their color, as their sessions do in the list (D45). */
+.ui-notify-ph[data-kind="program"] {
+  background: var(--program-block);
+}
+
+.ui-notify-ph[data-kind="special"] {
+  background: var(--special-block);
+}
+
+.ui-notify-ph[data-kind="prayer"] {
+  background: var(--prayer-block);
+}
+
+[data-platform="android"] .ui-notify-ph {
+  border-radius: 12px;
+}
+
+.ui-notify-section {
+  margin-top: 24px;
+}
+
+/* Choose events (NT-22): a row for each of the list's kinds, a square of its colour (D45). */
+.ui-notify-kind {
+  min-height: 60px;
+}
+
+/* Off, the kinds can't be opened (owner, 13 November 2026). */
+.ui-notify-kind:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.ui-notify-sq {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--class-bar);
+}
+
+.ui-notify-sq[data-kind="special"] {
+  background: var(--special-bar);
+}
+
+.ui-notify-sq[data-kind="prayer"] {
+  background: var(--prayer-bar);
+}
+
+/*
+ * A kind's events (NT-22): cards like the list's (EV-11), tinted with the event's kind, its
+ * picture, a bar, the name on up to two lines, where, when (on up to two lines) and its switch.
+ * Every card keeps the room of those lines, so all are the same height.
+ */
+/* Classes' groups (owner, 13 November 2026): the temple's, the branches', the study programs'. */
+.ui-follow-group {
+  margin-top: 20px;
+}
+
+section:first-of-type > .ui-follow-group {
+  margin-top: 4px;
+}
+
+.ui-follow-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ui-follow-row {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 10px 12px 10px 8px;
+  border-radius: 16px;
+  background: var(--class-block);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 8%),
+    0 4px 12px rgb(0 0 0 / 6%);
+}
+
+.ui-follow-row[data-kind="special"] {
+  background: var(--special-block);
+}
+
+.ui-follow-row[data-kind="prayer"] {
+  background: var(--prayer-block);
+}
+
+.ui-follow-row[data-kind="program"] {
+  background: var(--program-block);
+}
+
+.ui-follow-row[data-kind="branch"] {
+  background: var(--branch-block);
+}
+
+.ui-follow-row[data-kind="elsewhere"] {
+  background: var(--elsewhere-block);
+}
+
+.ui-follow-row .ui-notify-ph {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+}
+
+.ui-follow-bar {
+  flex: 0 0 auto;
+  align-self: stretch;
+  width: 4px;
+  border-radius: 2px;
+  background: var(--class-bar);
+}
+
+[data-kind="special"] > .ui-follow-bar {
+  background: var(--special-bar);
+}
+
+[data-kind="prayer"] > .ui-follow-bar {
+  background: var(--prayer-bar);
+}
+
+[data-kind="program"] > .ui-follow-bar {
+  background: var(--program-bar);
+}
+
+[data-kind="branch"] > .ui-follow-bar {
+  background: var(--branch-bar);
+}
+
+[data-kind="elsewhere"] > .ui-follow-bar {
+  background: var(--elsewhere-bar);
+}
+
+.ui-follow-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  min-height: 5.75rem;
+}
+
+.ui-follow-title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 0.941rem;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.ui-follow-where {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 12px;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.765rem;
+  line-height: 1.3;
+}
+
+.ui-follow-where > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.ui-follow-where svg {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.ui-follow-where .ui-place {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.ui-follow-when {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.765rem;
+  line-height: 1.3;
+}
+
+/* What following covers, at the start of the when line: Weekly, One time, 2 times. */
+.ui-follow-when b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Under Your events (NT-47): the reminders an event sends, beside a bell; the card keeps
+   room for the line, so all are the same height. */
+.ui-follow-reminders {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3em;
+  margin-top: 3px;
+  font-size: 0.765rem;
+  line-height: 1.3;
+}
+
+.ui-follow-reminders svg {
+  flex: none;
+  width: 1.05em;
+  height: 1.05em;
+  margin-top: 0.1em;
+  color: var(--accent);
+}
+
+.ui-follow-row[data-reminders] .ui-follow-text {
+  min-height: 6.9rem;
+}
+
+/* Notifications off: the events followed are kept and wait (NT-17). */
+.ui-follow-off {
+  opacity: 0.5;
+}
+
+.ui-follow-none {
+  margin-top: 4px;
+}
+
+/* What turning an event on does, once, above a kind's cards (owner, 13 November 2026). */
+.ui-follow-lead {
+  margin: 2px 4px 14px;
+  color: var(--muted);
+  font-size: 0.824rem;
+  line-height: 1.4;
+}
+
+.ui-follow-lead b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.ui-follow-row .ui-toggle {
+  flex: 0 0 auto;
+}
+
+/* Very large text: the card grows, the name and its lines take the whole width below. */
+@container (max-width: 15em) {
+  .ui-follow-row {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .ui-follow-bar {
+    display: none;
+  }
+
+  .ui-follow-text,
+  .ui-follow-row[data-reminders] .ui-follow-text {
+    flex-basis: 100%;
+    order: 3;
+    min-height: 0;
+  }
+
+  .ui-follow-title {
+    display: block;
+  }
+
+  .ui-follow-row .ui-toggle {
+    margin-left: auto;
+  }
+}
+
+.ui-follow-list {
+  container-type: inline-size;
+}
+
+.ui-notify-error {
+  margin: 8px 16px 0;
+  color: var(--special-text);
+  font-size: 0.882rem;
+}
+
+/* A switch as iPhone draws it: green when on. */
+.ui-toggle {
+  position: relative;
+  flex: 0 0 auto;
+  width: 51px;
+  height: 31px;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: rgba(120, 120, 128, 0.16);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ui-toggle::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.16);
+  transition: left 0.2s;
+}
+
+.ui-toggle[aria-checked="true"] {
+  background: #34c759;
+}
+
+.ui-toggle[aria-checked="true"]::after {
+  left: 22px;
+}
+
+.ui-toggle:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ui-toggle {
+    background: rgba(120, 120, 128, 0.32);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-toggle,
+  .ui-toggle::after {
+    transition: none;
+  }
+}
+
+/* Android: Material's switch, in the app's maroon when on. */
+[data-platform="android"] .ui-toggle {
+  width: 52px;
+  height: 32px;
+  background: var(--bg);
+  box-shadow: inset 0 0 0 2px var(--muted);
+}
+
+[data-platform="android"] .ui-toggle::after {
+  top: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  background: var(--muted);
+  box-shadow: none;
+  transition:
+    left 0.2s,
+    width 0.2s;
+}
+
+[data-platform="android"] .ui-toggle[aria-checked="true"] {
+  background: var(--accent);
+  box-shadow: none;
+}
+
+[data-platform="android"] .ui-toggle[aria-checked="true"]::after {
+  top: 4px;
+  left: 24px;
+  width: 24px;
+  height: 24px;
+  background: var(--on-accent);
+}
+
+[data-platform="android"] .ui-notify-row {
+  min-height: 60px;
+  padding: 8px 16px;
+}
+
+/* Notify me of changes, above an event's buttons (NT-13). */
+.ui-follow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 20px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--pressed);
+}
+
+[data-platform="android"] .ui-follow {
+  border-radius: 12px;
+}
+
+/* Dark: the panel is already a lighter grey, so the row is the darker card colour, keeping
+   its grey line readable (WCAG 1.4.3). */
+@media (prefers-color-scheme: dark) {
+  .ui-follow {
+    background: var(--surface);
+  }
+}

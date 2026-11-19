@@ -1,0 +1,704 @@
+{
+  "_note": "Real events from the dev schedule published 16 Oct 2026 (20261016T130850Z-7bed6db1): every event the website lists twice or at the same time and place, the Monday 7 PM classes at KMC DC and in Richmond, and one ordinary Sunday and Wednesday class. Summaries and descriptions emptied.",
+  "events": [
+    {
+      "id": "bff19d66-9083-4c25-8546-278c087c67ce",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-10-18-10-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-10-18T10:00:00-04:00",
+      "end": "2026-10-18T11:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "0091ea1a-6bbe-4022-8de1-6cb818851ec0",
+      "title": "Monday Meditation Class",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/monday-meditation-class-2026-10-19-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_BD70DGDE94GW",
+      "start": "2026-10-19T19:00:00-04:00",
+      "end": "2026-10-19T20:15:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "221d651b-8f33-4e2a-8266-1d2605739d5d",
+      "title": "Richmond Meditation Class",
+      "summary": "",
+      "description": "",
+      "categories": ["Richmond Branch Classes"],
+      "page": "https://www.example.org/event-details/richmond-meditation-class-17",
+      "registrationOpen": true,
+      "online": null,
+      "classId": "c_VVCAEVFKWNB3",
+      "start": "2026-10-19T19:00:00-04:00",
+      "end": "2026-10-19T20:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Diversity Thrift",
+        "address": "1407 Sherwood Ave, Richmond, VA 23220, USA",
+        "city": "Richmond",
+        "geo": {
+          "lat": 37.5696396,
+          "lng": -77.4549297
+        }
+      }
+    },
+    {
+      "id": "8a949ab4-3570-429e-8bb5-50f4b495855b",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-10-21-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-10-21T19:00:00-04:00",
+      "end": "2026-10-21T20:00:00-04:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7a8c796c-f12b-4df0-9ab0-cfe85ecc9924",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-11-22-10-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-11-22T10:00:00-05:00",
+      "end": "2026-11-22T11:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "ccd1789b-6f65-439d-bc7d-e9f735ca7c65",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-11-22-10-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-11-22T10:00:00-05:00",
+      "end": "2026-11-22T11:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3edeadaa-9ad9-4e61-8c9e-b1319e21c229",
+      "title": "Special Sunday Morning Meditation: From Judgement to Compassion with Teacher E. Example",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/special-sunday-morning-meditation-from-judgement-to-compassion-with-teacher-e-example",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_MEKCJTFXR86J",
+      "start": "2026-11-29T10:00:00-05:00",
+      "end": "2026-11-29T11:15:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "586822e4-c957-4912-b6cf-2b2aa9e6e5f8",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-11-29-10-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-11-29T10:00:00-05:00",
+      "end": "2026-11-29T11:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "96185679-4912-42aa-8a85-7da3b4d50c51",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-02-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-12-02T19:00:00-05:00",
+      "end": "2026-12-02T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "d0cb62c5-4401-4fb4-802e-83f6b1c2e082",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-02-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-12-02T19:00:00-05:00",
+      "end": "2026-12-02T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7e3da759-2d95-4d8b-a032-62ae70a132cd",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-12-06-10-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-12-06T10:00:00-05:00",
+      "end": "2026-12-06T11:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "b95cb1fb-b847-4420-93d0-cc8de23d9b6e",
+      "title": "Sunday Morning Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/sunday-morning-meditation-2026-12-06-10-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_PN2Z73ZJPZHP",
+      "start": "2026-12-06T10:00:00-05:00",
+      "end": "2026-12-06T11:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "1a20c775-8878-4bfb-9930-32322750ad76",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-09-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-12-09T19:00:00-05:00",
+      "end": "2026-12-09T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "56600be5-ab84-4865-bd0a-0f09c3876a9f",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-09-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-12-09T19:00:00-05:00",
+      "end": "2026-12-09T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8e5a939f-9686-4ca0-aab2-377b618a10c1",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-16-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-12-16T19:00:00-05:00",
+      "end": "2026-12-16T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "e17b92bb-0f90-4e18-b37d-f1955a55b480",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2026-12-16-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2026-12-16T19:00:00-05:00",
+      "end": "2026-12-16T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "8bd028d0-b187-4309-a9c2-f64514296930",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-06-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-06T19:00:00-05:00",
+      "end": "2027-01-06T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "aa53267f-58e2-457b-a5b1-bc78bb60fc97",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-06-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-06T19:00:00-05:00",
+      "end": "2027-01-06T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "09221f9b-97a8-41e0-9f3d-5bd6ff99d929",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-13-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-13T19:00:00-05:00",
+      "end": "2027-01-13T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "7a4fd3be-83ad-4a2b-9a59-b1b752e7b656",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-13-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-13T19:00:00-05:00",
+      "end": "2027-01-13T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "6fae381e-b1ad-4af4-bc18-033a82c997f5",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-20-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-20T19:00:00-05:00",
+      "end": "2027-01-20T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "dfc12d25-65bd-421e-bd48-7c72f86ac25f",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-20-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-20T19:00:00-05:00",
+      "end": "2027-01-20T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "3c9fd322-d35d-4db4-8416-610581d1a99c",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-27-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-27T19:00:00-05:00",
+      "end": "2027-01-27T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "79ce6c77-5993-408b-a50e-c526801974f9",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-01-27-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-01-27T19:00:00-05:00",
+      "end": "2027-01-27T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "75a983ff-c504-4465-b6aa-04f1c46163e0",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-02-03-19-00",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-02-03T19:00:00-05:00",
+      "end": "2027-02-03T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    },
+    {
+      "id": "78c22a40-6950-4fe9-83ef-ee324f516dc8",
+      "title": "Wednesday Step by Step Meditation",
+      "summary": "",
+      "description": "",
+      "categories": ["Weekly Meditation Classes"],
+      "page": "https://www.example.org/event-details/wednesday-step-by-step-meditation-2027-02-03-19-00-1",
+      "registrationOpen": true,
+      "online": {
+        "type": "livestream",
+        "page": "https://www.example.org/online-classes"
+      },
+      "classId": "c_SZ4RY2XBK96Q",
+      "start": "2027-02-03T19:00:00-05:00",
+      "end": "2027-02-03T20:00:00-05:00",
+      "allDay": false,
+      "location": {
+        "online": false,
+        "name": "Kadampa Meditation Center DC",
+        "address": "1200 Canal St SW, Washington, DC 20024, USA",
+        "city": "Washington",
+        "geo": {
+          "lat": 38.8762356,
+          "lng": -77.0117944
+        }
+      }
+    }
+  ]
+}

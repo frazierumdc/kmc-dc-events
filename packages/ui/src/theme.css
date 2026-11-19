@@ -1,0 +1,257 @@
+/*
+ * Theme tokens and component styles for the Events screen (C-8, EV-22). Colours are tokens
+ * with light and dark values; Android differs only under [data-platform="android"].
+ * The look follows the F1 mock-ups (D45). Each kind has a colour of its own, the owner's
+ * "Jewel tones" in light mode (emerald Classes, red-orange Special, lapis Prayers; sapphire
+ * branch classes, amethyst FP and TTP) and the earlier set in dark mode (teal Classes, orange
+ * Special, violet Prayers; rose branch classes, blue FP and TTP): a strong one for bars and dots, a soft one for the
+ * event's tint, and one for text on the tint. The brand's maroon marks only the app's own
+ * highlights. contrast.test.ts checks the pairs.
+ */
+
+:root {
+  --bg: #f2f2f7;
+  --surface: #ffffff;
+  --text: #1c1c1e;
+  /* Grey text a shade darker than iPhone's own, so it reads on the event blocks (4.8 : 1 or more). */
+  --muted: #545458;
+  --line: rgba(60, 60, 67, 0.18);
+  --accent: #7a1f2b;
+  --accent-soft: #f3e3e4;
+  --on-accent: #ffffff;
+  --class: #00836e;
+  --special: #c7310e;
+  --prayer: #3734cc;
+  --class-soft: #e0f0ee;
+  --special-soft: #f8e6e2;
+  --prayer-soft: #e7e7f9;
+  --class-text: #007965;
+  --special-text: #c3300e;
+  --prayer-text: #3734cc;
+  /* A class's own colour (D45): study programs, FP and TTP alike, amethyst (AN-15); branch classes
+     sapphire; white on each 4.5:1 or more. */
+  --program: #9621a2;
+  --program-soft: #f2e4f4;
+  --program-text: #9621a2;
+  --branch: #0460cb;
+  --branch-soft: #e1ecf9;
+  --branch-text: #0460cb;
+  /* Another center's special event (D67): slate (owner, 15 November 2026). */
+  --elsewhere: #4a5668;
+  --elsewhere-soft: #e9ecf1;
+  --elsewhere-text: #4a5668;
+  /* An event's block and its bar (D45). In light mode the tints are strong enough to stand
+     apart from the grey page as dark mode's do from black (about 1.3 : 1, owner, 9 November
+     2026), and the bars a shade darker to stay 4 : 1 or more on them. Pills keep the softer
+     -soft tints so their -text colour stays 4.5 : 1. */
+  --class-block: #c7e4df;
+  --special-block: #f3d2ca;
+  --prayer-block: #d3d2f4;
+  --program-block: #e8ceeb;
+  --branch-block: #c8dcf4;
+  --elsewhere-block: #d9dee6;
+  --class-bar: #00836e;
+  --special-bar: #c7310e;
+  --prayer-bar: #3734cc;
+  --program-bar: #9621a2;
+  --branch-bar: #0460cb;
+  --elsewhere-bar: #4a5668;
+  --bar: rgba(249, 249, 249, 0.86);
+  --bar-solid: #f9f9f9;
+  --track: rgba(118, 118, 128, 0.12);
+  --thumb: #ffffff;
+  --badge-bg: #ffffff;
+  --badge-text: #7a1f2b;
+  --notice-bg: #2c2c2e;
+  --notice-text: #ffffff;
+  --notice-muted: #c7c7cc;
+  --notice-action-bg: #ffffff;
+  --notice-action-text: #7a1f2b;
+  --pressed: rgba(60, 60, 67, 0.12);
+  --scrim: rgba(0, 0, 0, 0.4);
+  --grabber: rgba(60, 60, 67, 0.3);
+  --elevated: #ffffff;
+  --grouped: #f2f2f7;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --base: 1rem;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --surface: #1c1c1e;
+    --text: #f2f2f7;
+    --muted: #9a9aa0;
+    --line: rgba(84, 84, 88, 0.6);
+    --accent: #e0707d;
+    --accent-soft: #3a1a1f;
+    --on-accent: #1c1c1e;
+    --class: #3cc2cf;
+    --special: #f39a3d;
+    --prayer: #a796f5;
+    --class-soft: #12302f;
+    --special-soft: #36230f;
+    --prayer-soft: #25203f;
+    --class-text: #3cc2cf;
+    --special-text: #f39a3d;
+    --prayer-text: #a796f5;
+    --program: #6aa9ec;
+    --program-soft: #142a40;
+    --program-text: #6aa9ec;
+    --branch: #f07aa8;
+    --branch-soft: #3a1626;
+    --branch-text: #f07aa8;
+    /* A neutral slate, apart from the teal and blue (ΔE 35 or more). */
+    --elsewhere: #c4c8cf;
+    --elsewhere-soft: #222427;
+    --elsewhere-text: #c4c8cf;
+    --class-block: #12302f;
+    --special-block: #36230f;
+    --prayer-block: #25203f;
+    --program-block: #142a40;
+    --branch-block: #3a1626;
+    --elsewhere-block: #27292d;
+    --class-bar: #3cc2cf;
+    --special-bar: #f39a3d;
+    --prayer-bar: #a796f5;
+    --program-bar: #6aa9ec;
+    --branch-bar: #f07aa8;
+    --elsewhere-bar: #c4c8cf;
+    --bar: rgba(22, 22, 24, 0.86);
+    --bar-solid: #161618;
+    --track: rgba(118, 118, 128, 0.24);
+    --thumb: #535356;
+    --badge-bg: #e0707d;
+    --badge-text: #1c1c1e;
+    --notice-bg: #3a3a3c;
+    --notice-text: #ffffff;
+    --notice-muted: #c7c7cc;
+    --notice-action-bg: #e0707d;
+    --notice-action-text: #1c1c1e;
+    --pressed: rgba(235, 235, 245, 0.14);
+    --scrim: rgba(0, 0, 0, 0.55);
+    --grabber: rgba(235, 235, 245, 0.3);
+    --elevated: #2c2c2e;
+    --grouped: #1c1c1e;
+  }
+}
+
+[data-platform="android"] {
+  --font: Roboto, "Google Sans", system-ui, sans-serif;
+  --base: 0.941rem;
+  /* Material's snackbar: the inverse surface, its action in the inverse primary. */
+  --notice-bg: #322f30;
+  --notice-text: #f5eff0;
+  --notice-muted: #d6cfd0;
+  --notice-action-bg: transparent;
+  --notice-action-text: #ffb2b9;
+  --badge-bg: #ffb2b9;
+  --badge-text: #5f0f1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-platform="android"] {
+    --notice-bg: #e8e1e2;
+    --notice-text: #322f30;
+    --notice-muted: #4f4647;
+    --notice-action-text: #7a1f2b;
+    --badge-bg: #7a1f2b;
+    --badge-text: #ffffff;
+  }
+}
+
+/* ---------- base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Text follows the reader's text size (NFR-2). 1rem is 17px at the default size. A real
+ * iPhone or iPad takes the size from Settings (data-text="apple", set in main.tsx);
+ * Android Chrome scales the default size itself (text-scale meta in index.html). List
+ * content grows fully; the filter and the row of dates grow at most 1.3x; tab labels stay
+ * fixed, as on iPhone.
+ */
+html {
+  font-size: 106.25%;
+  /* The page stops at its top and end: no bounce pulling the bars down, no pull to refresh (EV-22). */
+  overscroll-behavior-y: none;
+}
+
+html[data-text="apple"] {
+  font: -apple-system-body;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--base);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Focus handed back by script after a touch closed a panel: no ring (return-focus.ts). */
+[data-quiet-focus]:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Fades move nothing, so they stay: a message going away. */
+  .ui-leaving > *,
+  [data-platform="android"] .ui-leaving > * {
+    animation-name: ui-fade-out !important;
+    animation-duration: 0.2s !important;
+  }
+}
+
+.ui-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 max(16px, env(safe-area-inset-left)) 0 max(16px, env(safe-area-inset-right));
+}
+
+.ui-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

@@ -1,0 +1,162 @@
+{
+  "center": {
+    "name": "Kadampa Meditation Center DC",
+    "shortName": "KMC DC"
+  },
+  "homeCity": "Washington",
+  "contact": {
+    "phoneDisplay": "202.555.0100",
+    "phoneE164": "+12025550100",
+    "email": "info@example.org"
+  },
+  "links": {
+    "onlineClasses": "https://www.example.org/online-classes"
+  },
+  "allowedHosts": ["www.example.org", "other-center.example.org"],
+  "categoryKinds": {
+    "Weekly Meditation Classes": "class",
+    "Study Programs": "class",
+    "Richmond Branch Classes": "class",
+    "Retreats & Special Events": "special",
+    "Online Special Events": "special",
+    "Chanted Prayers": "prayer"
+  },
+  "membership": {
+    "title": "You belong here",
+    "intro": "Become a member and make meditation part of your life.",
+    "benefits": [
+      "Free drop-in classes",
+      "Free Friday Night Lectures",
+      "Free or half-price courses and retreats"
+    ],
+    "note": "Benefits vary by plan.",
+    "link": "https://www.example.org/pricing-plans/list"
+  },
+  "online": {
+    "livestreams": [
+      {
+        "category": "Weekly Meditation Classes",
+        "times": [
+          {
+            "day": "sun",
+            "start": "10:00"
+          },
+          {
+            "day": "mon",
+            "start": "19:00"
+          },
+          {
+            "day": "tue",
+            "start": "18:00"
+          },
+          {
+            "day": "wed",
+            "start": "12:15"
+          },
+          {
+            "day": "wed",
+            "start": "19:00"
+          },
+          {
+            "day": "thu",
+            "start": "18:30"
+          },
+          {
+            "day": "thu",
+            "start": "19:15"
+          }
+        ]
+      },
+      {
+        "category": "Chanted Prayers",
+        "except": ["Dakini Yoga", "Quick Path to Great Bliss"]
+      }
+    ],
+    "iconOnly": [
+      {
+        "category": "Retreats & Special Events",
+        "titleWord": "Festival"
+      }
+    ]
+  },
+  "programs": [
+    {
+      "id": "fp",
+      "name": "Foundation Program",
+      "shortName": "FP",
+      "category": "Study Programs",
+      "titles": ["The Foundation Program", "Foundation Program"],
+      "classDays": ["sun"]
+    },
+    {
+      "id": "ttp",
+      "name": "Teacher Training Program",
+      "shortName": "TTP",
+      "category": "Study Programs",
+      "titles": ["Teacher Training Program", "Teacher Training Program (TTP)"],
+      "classDays": ["sun", "tue"],
+      "prayerDays": { "monthDays": [10, 25], "prayer": "Offering to the Spiritual Guide" }
+    }
+  ],
+  "emailNames": {
+    "prayers": [
+      { "code": "HJ", "name": "Heart Jewel", "startsWith": "Heart Jewel" },
+      { "code": "35CB", "name": "35 Confession Buddhas", "startsWith": "35 Confession Buddhas" },
+      { "code": "DY", "name": "Dakini Yoga", "startsWith": "Dakini Yoga" },
+      {
+        "code": "QPGB",
+        "name": "Quick Path to Great Bliss",
+        "startsWith": "Quick Path to Great Bliss"
+      },
+      {
+        "code": "WFJ",
+        "name": "Wishfulfilling Jewel with Tsog",
+        "startsWith": "Wishfulfilling Jewel"
+      },
+      {
+        "code": "OSG",
+        "name": "Offering to the Spiritual Guide",
+        "startsWith": "Offering to the Spiritual Guide"
+      },
+      { "code": "MD", "name": "Melodious Drum (Kangso)", "startsWith": "Melodious Drum" },
+      { "code": "GT", "name": "Green Tara", "startsWith": "Liberation from Sorrow" },
+      { "code": "PW", "name": "Powa: Prayers for the Deceased", "startsWith": "Powa" }
+    ],
+    "classes": [
+      { "label": "Sun", "startsWith": "Sunday Morning" },
+      { "label": "Mon", "startsWith": "Monday Meditation" },
+      { "label": "Rest", "startsWith": "Tuesday Rest" },
+      { "label": "Lunch", "startsWith": "Wednesday Lunchtime" },
+      { "label": "Step", "startsWith": "Wednesday Step" },
+      { "label": "Unwind", "startsWith": "Thursday Unwind" },
+      { "label": "Rich", "startsWith": "Richmond" }
+    ],
+    "special": [
+      { "label": "Bliss", "startsWith": "Bliss and Benefit" },
+      { "label": "Lecture", "startsWith": "Friday Night Lecture" },
+      { "label": "Party", "startsWith": "Holiday Party" },
+      { "label": "Candles", "startsWith": "New Years Eve" },
+      { "label": "Silent", "startsWith": "Silent Saturday" },
+      { "label": "Blessing", "startsWith": "The Blessing Empowerment" },
+      { "label": "Retreat", "startsWith": "Vajrasattva Retreat" },
+      { "label": "Retreat", "startsWith": "Post Fall Festival Retreat" }
+    ]
+  },
+  "otherCenterEvents": [
+    {
+      "id": "example-center-2026-12-05-sample-retreat",
+      "title": "Sample Retreat: A Quiet Weekend of Meditation with Guest Teacher G. Example",
+      "description": "A sample weekend retreat at another center, made up for this repository.\n\nTwo days of guided meditations and short talks, with time for questions. Everyone is welcome.\n\nSaturday 10:00 AM to 5:00 PM and Sunday 10:30 AM to 4:15 PM, at Example Meditation Center. Lunch is included.\n\nG. Example is a fictional guest teacher: this paragraph stands where a visiting teacher's short biography would be.",
+      "categories": ["Retreats & Special Events"],
+      "page": "https://other-center.example.org/sample-retreat",
+      "picture": "https://images.squarespace-cdn.com/content/v1/example/sample-retreat.jpg",
+      "start": "2026-12-05T10:00:00-05:00",
+      "end": "2026-12-06T16:15:00-05:00",
+      "location": {
+        "name": "Example Meditation Center",
+        "address": "100 Example Street, Exampleville, ZZ 00000",
+        "city": "Exampleville"
+      }
+    }
+  ]
+}

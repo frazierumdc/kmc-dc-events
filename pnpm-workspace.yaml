@@ -1,0 +1,28 @@
+packages:
+  - apps/*
+  - packages/*
+  - e2e
+  - brand
+allowBuilds:
+  "@firebase/util": false
+  protobufjs: false
+  re2: false
+  sharp: false
+  esbuild: false
+# Security fixes for packages this workspace does not depend on directly, where the package
+# that does has no release yet that takes the fixed version (pnpm audit --prod, 18 Nov 2026).
+# Each is used only until its parent catches up: remove it when `pnpm audit --prod` stays
+# clean without it. They change what pnpm installs here and in the job's image. They do not
+# reach the functions in the cloud, where Firebase's build runs npm on its own.
+overrides:
+  # GHSA for fflate <0.7.5, through satori > @shuding/opentype.js, which asks for ^0.7.3:
+  # 0.7.5 is inside that range, but updating did not move the locked 0.7.3, so it is named here.
+  "fflate@>=0.7.0 <0.7.5": "0.7.5"
+  # GHSA-f596-whhp-79r4 and one more for @grpc/grpc-js <1.13.6. The Firebase web SDK's
+  # Firestore pins ~1.9.0 and has no release with the fix. Same major version; the app uses
+  # no Firestore, so this code is never in the app's bundle.
+  "@firebase/firestore>@grpc/grpc-js": "^1.13.6"
+  # GHSA-3g3m-2fjr-6pw4 (glob <14.0.2) and GHSA-g3hv-75wg-m249 (minimatch <11.0.1) come only
+  # through rimraf 5, which google-gax and gaxios (under firebase-admin) list but never load
+  # at run time. rimraf 6 takes the fixed glob. A major version of a package no code here runs.
+  "rimraf@5": "^6.1.4"

@@ -1,0 +1,15 @@
+# What the jobs' image never needs (apps/job/Dockerfile).
+**/node_modules
+**/dist
+.git
+.github
+.claude
+.copy
+.capture
+.outbox
+.mail-state
+docs
+# Only its package file, which the workspace's lockfile names.
+e2e/*
+!e2e/package.json
+SESSION-HANDOFF.md

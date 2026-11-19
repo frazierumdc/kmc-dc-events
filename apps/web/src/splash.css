@@ -1,0 +1,136 @@
+/* The splash (EV-42): Pond, chosen by the owner (docs/design/README.md#splash-screen-proposed).
+   It is in index.html, so it shows with the first frame; splash.ts takes it away. iPhone's
+   start-up images are screenshots of it (brand/startup-images.ts), so the two match. */
+
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+  background: linear-gradient(#cfe6fa 0%, #eef6fd 45%, #fff 70%);
+  color: #1f3b57;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.4s ease;
+}
+
+.splash[hidden],
+[data-nosplash] .splash {
+  display: none;
+}
+
+.splash-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash-logo {
+  width: 184px;
+  height: 184px;
+  border-radius: 50%;
+  box-shadow: 0 12px 30px rgb(47 110 168 / 22%);
+}
+
+.splash-title {
+  margin: 34px 0 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.splash-divider {
+  margin-top: 14px;
+}
+
+.splash-divider .wave {
+  stroke: #2f6ea8;
+}
+
+.splash-welcome {
+  margin: 8px 0 0;
+  color: #7a1f2b;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.splash-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 40px;
+  color: #2f6ea8;
+}
+
+.splash-dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentcolor;
+  opacity: 0.35;
+  animation: splash-dot 1.2s ease-in-out infinite;
+}
+
+.splash-dots i:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.splash-dots i:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes splash-dot {
+  30% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .splash {
+    background: linear-gradient(#0e2236 0%, #14202c 40%, #161618 70%);
+    color: #e6f0fa;
+  }
+
+  .splash-logo {
+    box-shadow:
+      0 0 0 1px rgb(255 255 255 / 8%),
+      0 12px 40px rgb(110 170 230 / 25%);
+  }
+
+  .splash-divider .wave {
+    stroke: #7fb3e6;
+  }
+
+  .splash-welcome {
+    color: #f0a0ae;
+  }
+
+  .splash-dots {
+    color: #7fb3e6;
+  }
+}
+
+/* Start-up image screenshots: the dots still, as the animation starts. */
+[data-still] .splash-dots i {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash {
+    transition: none;
+  }
+
+  .splash-dots i {
+    animation: none;
+  }
+}

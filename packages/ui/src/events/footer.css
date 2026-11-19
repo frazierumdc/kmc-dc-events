@@ -1,0 +1,63 @@
+/* ---------- footer ---------- */
+
+.ui-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.882rem;
+}
+
+[data-platform="android"] .ui-card {
+  border-radius: 16px;
+}
+
+.ui-card p {
+  margin: 0;
+}
+
+/* The membership card (EV-17): neutral, a heading, benefits with grey checks, one button. */
+.ui-member {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px 14px;
+}
+
+.ui-member h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.059rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.ui-member ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2px 0 4px;
+  padding: 0;
+  list-style: none;
+  color: var(--text);
+}
+
+.ui-member li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ui-member li svg {
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+  margin-top: 0.1em;
+  color: var(--muted);
+}
+
+.ui-member-note {
+  font-size: 0.765rem;
+  text-align: center;
+}

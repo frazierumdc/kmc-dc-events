@@ -1,0 +1,17 @@
+node_modules/
+dist/
+apps/functions/deploy/
+.capture/
+.sync/
+.copy/
+.outbox/
+.certs/
+.env*
+*.log
+.DS_Store
+*.code-workspace
+coverage/
+test-results/
+playwright-report/
+.builds/
+.mail-state/

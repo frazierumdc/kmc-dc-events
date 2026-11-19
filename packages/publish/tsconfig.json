@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src", "test", "calendar-files.ts", "event-pages.ts", "publish-schedule.ts"]
+}

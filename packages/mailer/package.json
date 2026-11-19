@@ -1,0 +1,16 @@
+{
+  "name": "@kmcdc/mailer",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@kmcdc/cloud": "workspace:*",
+    "@kmcdc/domain": "workspace:*",
+    "zod": "^4.6.7"
+  }
+}

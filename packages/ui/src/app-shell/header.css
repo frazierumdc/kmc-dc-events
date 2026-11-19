@@ -1,0 +1,122 @@
+/* ---------- header: top bar and controls ---------- */
+
+/*
+ * The top bar and the controls stick (EV-22) and read as one bar; only the controls draw
+ * the line below.
+ */
+.ui-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 21;
+  padding-top: env(safe-area-inset-top);
+  background: var(--bar);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  /* Its own layer, kept drawn while the list under it changes. */
+  will-change: transform;
+}
+
+/* Tall enough for the small title and the name under it, at any text size. */
+.ui-topbar-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: max(58px, 1.25 * (min(1rem, 22px) + min(0.765rem, 17px)) + 14px);
+}
+
+.ui-brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.ui-brand img {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+}
+
+/*
+ * The title in small with the center's name under it in grey (a navigation bar's title and
+ * subtitle): centred on iPhone, clear of the logo.
+ */
+.ui-compact-title {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: calc(100% - 2 * (max(16px, env(safe-area-inset-left)) + 44px));
+  line-height: 1.25;
+  transform: translateX(-50%);
+}
+
+.ui-compact-main,
+.ui-compact-sub {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui-compact-main {
+  margin: 0;
+  font-size: min(1rem, 22px);
+  font-weight: 600;
+}
+
+.ui-compact-sub {
+  color: var(--muted);
+  font-size: min(0.765rem, 17px);
+}
+
+/* Android: the small title sits at the start, after the logo (Material top app bar). */
+[data-platform="android"] .ui-topbar-row {
+  min-height: max(56px, 1.2 * (min(1.294rem, 28px) + min(0.824rem, 18px)) + 6px);
+}
+
+[data-platform="android"] .ui-compact-title {
+  left: calc(max(16px, env(safe-area-inset-left)) + 48px);
+  align-items: flex-start;
+  max-width: calc(100% - 140px);
+  transform: none;
+}
+
+[data-platform="android"] .ui-compact-main {
+  font-size: min(1.294rem, 28px);
+  font-weight: 400;
+}
+
+[data-platform="android"] .ui-compact-sub {
+  font-size: min(0.824rem, 18px);
+}
+
+/* Android: solid bars, as Material's top app bar. */
+[data-platform="android"] .ui-topbar,
+[data-platform="android"] .ui-controls {
+  background: var(--bar-solid);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.ui-controls {
+  position: sticky;
+  top: var(--topbar-h, 44px);
+  z-index: 20;
+  background: var(--bar);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--line);
+  will-change: transform;
+}
+
+/* While the next filter's list is drawn, hidden (EV-12), the bars don't blur it, so they
+   stay drawn; they blur it again from its first frame on screen. */
+html[data-switching] .ui-topbar,
+html[data-switching] .ui-controls {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
